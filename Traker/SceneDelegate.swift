@@ -23,13 +23,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
     
     func createTrakerViewController() -> UINavigationController {
-        let trakerViewController = ViewController()
+        let trakerViewController = MainViewController()
+        trakerViewController.title = "Трекеры"
         trakerViewController.tabBarItem = UITabBarItem(title: "Трекеры", image: UIImage(named: "TrakItem"), tag: 1)
         return UINavigationController(rootViewController: trakerViewController)
     }
     
     func createStaticticViewController() -> UINavigationController {
         let statisticViewController = StatisticViewController()
+        statisticViewController.title = "Статистика"
         statisticViewController.tabBarItem = UITabBarItem(title: "Статистика", image: UIImage(named: "StatisticItem"), tag: 2)
         return UINavigationController(rootViewController: statisticViewController)
     }
