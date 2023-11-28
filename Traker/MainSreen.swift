@@ -16,6 +16,7 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
         return imageView
     }()
     
+    
     var mainMassege: UILabel = {
         let label = UILabel()
         label.text = "Добавьте первый трекер"
@@ -66,15 +67,12 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
     }
     
     func addDate(){
-        let addDate = UIBarButtonItem(title: "23.11.23", style: .plain, target: self, action: #selector(Self.datePicker))
+        let dataPiker = UIDatePicker()
+        dataPiker.datePickerMode = .date
+        dataPiker.locale = .current
+        let addDate = UIBarButtonItem(customView: dataPiker)
         addDate.tintColor = .ypBlack
         navigationItem.rightBarButtonItem = addDate
-    }
-    
-  @objc func datePicker(){
-      let datePiker = UIDatePicker(frame: .zero)
-      datePiker.datePickerMode = .date
-      
     }
     
     func addNewTask(){
