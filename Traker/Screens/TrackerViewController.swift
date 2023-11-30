@@ -7,25 +7,27 @@
 
 import UIKit
 
-class MainViewController: UIViewController, UISearchResultsUpdating {
+final class TrackersViewController: UIViewController {
     
-    var mainImage: UIImageView = {
+    private var mainImage: UIImageView = {
         let image = UIImage(named: "MainImage")
         let imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         return imageView
     }()
     
-    
-    var mainMassege: UILabel = {
+    private var mainMassege: UILabel = {
         let label = UILabel()
         label.text = "Добавьте первый трекер"
         label.textColor = .ypBlack
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
+    
+    private var categories: [TrackerCategory] = []
+    private var completedTrackers: [TrackerRecord] = []
 
-    func setupConstraints() {
+    private func setupConstraints() {
         var constraints = [NSLayoutConstraint]()
      
         //Добавление картинки в центр главного экрана
@@ -36,16 +38,13 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
         constraints.append(mainMassege.centerXAnchor.constraint(equalTo: mainImage.centerXAnchor))
         constraints.append(mainMassege.topAnchor.constraint(equalTo: mainImage.bottomAnchor, constant: 8))
         
-        
         NSLayoutConstraint.activate(constraints)
     }
     
-    func setupView(){
+    private func setupView(){
         view.addSubview(mainImage)
         view.addSubview(mainMassege)
     }
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,14 +58,15 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
     }
 
     @objc private func didTapButton(){
-        print("tap tap tap")
+        let createNewTask = UINavigationController(rootViewController: SelectTypeTrackerViewController())
+        present(createNewTask, animated: true)
     }
     
-    func setupNavBar(){
+   private func setupNavBar(){
         navigationController?.navigationBar.prefersLargeTitles = true
     }
     
-    func addDate(){
+    private func addDate(){
         let dataPiker = UIDatePicker()
         dataPiker.datePickerMode = .date
         dataPiker.locale = .current
@@ -75,25 +75,24 @@ class MainViewController: UIViewController, UISearchResultsUpdating {
         navigationItem.rightBarButtonItem = addDate
     }
     
-    func addNewTask(){
+    private func addNewTask(){
         let newTask = UIBarButtonItem(image: UIImage(named: "PlusTask"), style: .plain, target: self, action: #selector(Self.didTapButton))
         newTask.tintColor = .ypBlack
         navigationItem.leftBarButtonItem = newTask
     }
     
-    func search() -> UISearchController {
+    private func search(){
         let search = UISearchController(searchResultsController: nil)
         search.searchResultsUpdater = self
         search.obscuresBackgroundDuringPresentation = false
         search.searchBar.placeholder = "Поиск"
         navigationItem.searchController = search
-        return search
     }
-    
-    func updateSearchResults(for searchController: UISearchController) {
+}
+
+extension TrackersViewController: UISearchResultsUpdating {
+    internal func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else { return }
         print(text)
     }
-    
 }
-
