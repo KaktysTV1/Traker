@@ -19,6 +19,7 @@
 		EFB5C9532B18A36A00C6D900 /* TrackerCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C9522B18A36900C6D900 /* TrackerCategory.swift */; };
 		EFB5C9552B18A3AE00C6D900 /* TrackerRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C9542B18A3AE00C6D900 /* TrackerRecord.swift */; };
 		EFB5C9582B18AC9600C6D900 /* SelectTypeTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C9572B18AC9600C6D900 /* SelectTypeTrackerViewController.swift */; };
+		EFB5C95B2B1936A600C6D900 /* TrackerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFB5C95A2B1936A600C6D900 /* TrackerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EFB5C9522B18A36900C6D900 /* TrackerCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCategory.swift; sourceTree = "<group>"; };
 		EFB5C9542B18A3AE00C6D900 /* TrackerRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerRecord.swift; sourceTree = "<group>"; };
 		EFB5C9572B18AC9600C6D900 /* SelectTypeTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTypeTrackerViewController.swift; sourceTree = "<group>"; };
+		EFB5C95A2B1936A600C6D900 /* TrackerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +72,9 @@
 			children = (
 				EF882E9A2B108E6400E957FD /* AppDelegate.swift */,
 				EF882E9C2B108E6400E957FD /* SceneDelegate.swift */,
-				EFB5C8EA2B15E3DE00C6D900 /* Screens */,
+				EFB5C8EA2B15E3DE00C6D900 /* ViewControllers */,
 				EFB5C8E92B15DD5B00C6D900 /* TabBar Controller */,
-				EFB5C9562B18AC5700C6D900 /* SelectTypeTrackerVIewController */,
+				EFB5C9592B19365A00C6D900 /* TrackerCollection */,
 				EFB5C94F2B18A25800C6D900 /* Models */,
 				EF882EAE2B13880500E957FD /* Helps */,
 				EF882EA32B108E6500E957FD /* Assets.xcassets */,
@@ -98,13 +100,14 @@
 			path = "TabBar Controller";
 			sourceTree = "<group>";
 		};
-		EFB5C8EA2B15E3DE00C6D900 /* Screens */ = {
+		EFB5C8EA2B15E3DE00C6D900 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
 				EF882E9E2B108E6400E957FD /* TrackerViewController.swift */,
 				EF882EB12B13A46700E957FD /* StatisticScreen.swift */,
+				EFB5C9562B18AC5700C6D900 /* SelectTypeTrackerVIewController */,
 			);
-			path = Screens;
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		EFB5C94F2B18A25800C6D900 /* Models */ = {
@@ -123,6 +126,14 @@
 				EFB5C9572B18AC9600C6D900 /* SelectTypeTrackerViewController.swift */,
 			);
 			path = SelectTypeTrackerVIewController;
+			sourceTree = "<group>";
+		};
+		EFB5C9592B19365A00C6D900 /* TrackerCollection */ = {
+			isa = PBXGroup;
+			children = (
+				EFB5C95A2B1936A600C6D900 /* TrackerCell.swift */,
+			);
+			path = TrackerCollection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +211,7 @@
 				EFB5C9532B18A36A00C6D900 /* TrackerCategory.swift in Sources */,
 				EF882EB02B13881A00E957FD /* UIColors.swift in Sources */,
 				EFB5C8E82B15DD1A00C6D900 /* TabBarController.swift in Sources */,
+				EFB5C95B2B1936A600C6D900 /* TrackerCell.swift in Sources */,
 				EFB5C9582B18AC9600C6D900 /* SelectTypeTrackerViewController.swift in Sources */,
 				EFB5C9552B18A3AE00C6D900 /* TrackerRecord.swift in Sources */,
 				EF882E9B2B108E6400E957FD /* AppDelegate.swift in Sources */,

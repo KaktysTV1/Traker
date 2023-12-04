@@ -7,21 +7,21 @@
 
 import UIKit
 
-private func createTrakerViewController() -> UINavigationController {
+func createTrakerViewController() -> UINavigationController {
     let trakerViewController = TrackersViewController()
     trakerViewController.title = "Трекеры"
     trakerViewController.tabBarItem = UITabBarItem(title: "Трекеры", image: UIImage(named: "TrakItem"), tag: 1)
     return UINavigationController(rootViewController: trakerViewController)
 }
 
-private func createStaticticViewController() -> UINavigationController {
+func createStaticticViewController() -> UINavigationController {
     let statisticViewController = StatisticViewController()
     statisticViewController.title = "Статистика"
     statisticViewController.tabBarItem = UITabBarItem(title: "Статистика", image: UIImage(named: "StatisticItem"), tag: 2)
     return UINavigationController(rootViewController: statisticViewController)
 }
 
-private func createTabBarController() -> UITabBarController {
+func createTabBarController() -> UITabBarController {
     let tabBarController = UITabBarController()
     UITabBar.appearance().backgroundColor = UIColor(named: "White")
     tabBarController.viewControllers = [createTrakerViewController(), createStaticticViewController()]

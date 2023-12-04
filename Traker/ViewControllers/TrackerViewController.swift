@@ -24,6 +24,22 @@ final class TrackersViewController: UIViewController {
         return label
     }()
     
+    private var collectionView: UICollectionView = {
+        let layout = UICollectionViewLayout()
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        return collectionView
+    }()
+    
+    init() {
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private let cellIdentifier = "cell"
+    
     private var categories: [TrackerCategory] = []
     private var completedTrackers: [TrackerRecord] = []
 
@@ -38,12 +54,18 @@ final class TrackersViewController: UIViewController {
         constraints.append(mainMassege.centerXAnchor.constraint(equalTo: mainImage.centerXAnchor))
         constraints.append(mainMassege.topAnchor.constraint(equalTo: mainImage.bottomAnchor, constant: 8))
         
+        constraints.append(collectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor))
+        constraints.append(collectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor))
+        constraints.append(collectionView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor))
+        constraints.append(collectionView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor))
+        
         NSLayoutConstraint.activate(constraints)
     }
     
     private func setupView(){
         view.addSubview(mainImage)
         view.addSubview(mainMassege)
+        view.addSubview(collectionView)
     }
     
     override func viewDidLoad() {
@@ -55,6 +77,7 @@ final class TrackersViewController: UIViewController {
         search()
         setupNavBar()
         addDate()
+        setupCollectionView()
     }
 
     @objc private func didTapButton(){
@@ -88,6 +111,12 @@ final class TrackersViewController: UIViewController {
         search.searchBar.placeholder = "Поиск"
         navigationItem.searchController = search
     }
+    
+    private func setupCollectionView(){
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.register(TrackerCell.self, forCellWithReuseIdentifier: cellIdentifier)
+        collectionView.dataSource = self
+    }
 }
 
 extension TrackersViewController: UISearchResultsUpdating {
@@ -96,3 +125,17 @@ extension TrackersViewController: UISearchResultsUpdating {
         print(text)
     }
 }
+
+extension TrackersViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! TrackerCell
+        cell.contentView.backgroundColor = .ypBlack
+        return cell
+    }
+}
+
