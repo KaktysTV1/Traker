@@ -7,7 +7,25 @@
 
 import UIKit
 
+protocol TrackerCellDelegate: AnyObject {
+    func recordTrackerCompletionForSelectedDate(id: UInt)
+    func removeTrackerCompletionForSelectedDate(id: UInt)
+}
+
 final class TrackerCell: UICollectionViewCell {
+    
+    weak var delegate: TrackerCellDelegate?
+    
+    private var completionCounter: Int = 0 {
+        didSet {
+            updateHabitStatisticsLabelDays()
+        }
+    }
+    private var isCompletedToday: Bool = false {
+        didSet {
+            updateCompletionButtonState()
+        }
+    }
     
     private var trackerId: UInt = 0
     
@@ -16,7 +34,6 @@ final class TrackerCell: UICollectionViewCell {
         view.translatesAutoresizingMaskIntoConstraints = false
         view.layer.cornerRadius = 16
         view.layer.masksToBounds = true
-        view.backgroundColor = .ypBlack
         return view
     }()
     
@@ -30,7 +47,7 @@ final class TrackerCell: UICollectionViewCell {
         var paragraphStyle = NSMutableParagraphStyle()
         paragraphStyle.lineHeightMultiple = 1.26
         label.attributedText = NSMutableAttributedString(string: "Default text", attributes: [NSAttributedString.Key.paragraphStyle: paragraphStyle])
-
+        
         return label
     }()
     
@@ -55,7 +72,7 @@ final class TrackerCell: UICollectionViewCell {
         var button = UIButton.systemButton(with: image!, target: self, action: #selector(compliteTask))
         button.translatesAutoresizingMaskIntoConstraints = false
         button.layer.cornerRadius = 20
-       
+        
         return button
     }()
     
@@ -69,6 +86,37 @@ final class TrackerCell: UICollectionViewCell {
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func updateHabitStatisticsLabelDays(){
+        statisticLabel.text = completionCounter == 1
+        ? String(completionCounter) + " день"
+        : String(completionCounter) + " дней"
+    }
+    private func updateCompletionButtonState() {
+        if isCompletedToday {
+            compliteButton.setImage(UIImage(systemName: "checkmark"), for: .normal)
+            compliteButton.alpha = 1
+        } else {
+            compliteButton.setImage(UIImage(systemName: "plus"), for: .normal)
+            compliteButton.alpha = 0.3
+        }
+    }
+    
+    func setupTrackerCell(descriptionName: String,
+                          emoji: String,
+                          descriptionViewBackgroundColor: UIColor,
+                          completionButtonTintColor: UIColor,
+                          trackerID: UInt,
+                          counter: Int,
+                          completionFlag: Bool) {
+        taskDescriptionLabel.text = descriptionName
+        emojiLabel.text = emoji
+        cellDescriptionView.backgroundColor = descriptionViewBackgroundColor
+        compliteButton.tintColor = completionButtonTintColor
+        completionCounter = counter
+        trackerId = trackerID
+        isCompletedToday = completionFlag
     }
     
     private func setupView(){

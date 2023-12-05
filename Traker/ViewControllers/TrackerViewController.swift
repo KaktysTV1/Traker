@@ -41,7 +41,28 @@ final class TrackersViewController: UIViewController {
     private let cellIdentifier = "cell"
     
     private var categories: [TrackerCategory] = []
-    private var completedTrackers: [TrackerRecord] = []
+    private var allCategories: [TrackerCategory] = [
+            TrackerCategory(
+                headerName: "Домашний уют",
+                trackerArray: [
+                    Tracker(id: 1, name: "Поливать цветы", color: .magenta, emoji: "❤️", schedule: [1, 2, 3, 4, 5])
+                ]
+            ),
+            TrackerCategory(
+                headerName: "Радостные мелочи",
+                trackerArray: [
+                    Tracker(id: 2, name: "Котяра заслонил камеру", color: .orange, emoji: "😻", schedule: [1, 2, 3, 4, 5]),
+                    Tracker(id: 3, name: "Бабушка прислала открытку в Telegram", color: .red, emoji: "🌺",     schedule: [1, 2, 3, 4, 5]),
+                    Tracker(id: 4, name: "Свидание в апреле", color: .blue, emoji: "❤️",                      schedule: [1, 2, 3, 4, 5,])
+                ]
+            )
+        ]
+    private var completedTrackers: [TrackerRecord] = [
+        TrackerRecord(id: 1, date: Date()),
+        TrackerRecord(id: 2, date: Date())
+    ]
+    private var currentDatePicker: Date = Date()
+    private let calendar = Calendar(identifier: .gregorian)
 
     private func setupConstraints() {
         var constraints = [NSLayoutConstraint]()
@@ -117,6 +138,16 @@ final class TrackersViewController: UIViewController {
         collectionView.register(TrackerCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.dataSource = self
     }
+    
+    private func getRecordTracker(withId id: UInt) -> [TrackerRecord] {
+        completedTrackers.filter{$0.id == id}
+    }
+    
+    private func trackerComptite(withId id: UInt) -> Bool {
+        return getRecordTracker(withId: id).contains {
+            calendar.isDate($0.date, equalTo: currentDatePicker, toGranularity: .day)
+        }
+    }
 }
 
 extension TrackersViewController: UISearchResultsUpdating {
@@ -127,15 +158,32 @@ extension TrackersViewController: UISearchResultsUpdating {
 }
 
 extension TrackersViewController: UICollectionViewDataSource {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+            return allCategories.count
+        }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 1
+        let count = allCategories[section].trackerArray.count
+        return count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! TrackerCell
-        cell.contentView.backgroundColor = .ypBlack
+        
+        let tracker: Tracker = categories[indexPath.section].trackerArray[indexPath.row]
+        
+        cell.setupTrackerCell(descriptionName: tracker.name,
+                              emoji: tracker.emoji,
+                              descriptionViewBackgroundColor: tracker.color,
+                              completionButtonTintColor: tracker.color,
+                              trackerID: tracker.id,
+                              counter: getRecordTracker(withId: tracker.id).count,
+                              completionFlag: trackerComptite(withId: tracker.id))
+        
+        //cell.delegate = self
+        
         return cell
+        
     }
 }
-

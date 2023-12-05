@@ -9,6 +9,6 @@ import Foundation
 
 struct TrackerRecord {
     let id: UInt
-    let date: String
+    let date: Date
 }
 
