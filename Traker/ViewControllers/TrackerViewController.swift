@@ -138,6 +138,7 @@ final class TrackersViewController: UIViewController {
         collectionView.register(TrackerCell.self, forCellWithReuseIdentifier: cellIdentifier)
         collectionView.register(TrackerCellHeader.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "header")
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.contentInset = UIEdgeInsets(top: 6, left: 16, bottom: 24, right: 16)
     }
     
