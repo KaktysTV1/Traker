@@ -9,9 +9,10 @@ import Foundation
 import UIKit
 
 struct Tracker {
-    let id: UInt
+    let id: UUID
     let name: String
-    let color: UIColor
-    let emoji: String
-    let schedule: [Int]
+    let schedule: [Weekday]?
+//    let color: UIColor
+//    let emoji: String
+    
 }
