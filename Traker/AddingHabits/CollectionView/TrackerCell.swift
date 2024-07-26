@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TrackerCell: UICollectionViewCell {
+final class TrackerCell: UICollectionViewCell {
     // MARK: - Properties:
     static let reuseID = "TrackersCell"
     weak var delegate: TrackerCellDelegate?

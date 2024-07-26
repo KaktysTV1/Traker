@@ -20,7 +20,7 @@ final class CategoriesViewController: UIViewController, UITextFieldDelegate {
             showOrHideStubs()
         }
     }
-    var selectedCategory: String = ""
+    private var selectedCategory: String = ""
     
     // MARK: - Private properties:
     private lazy var topTitle: UILabel = {
@@ -135,15 +135,9 @@ final class CategoriesViewController: UIViewController, UITextFieldDelegate {
     }
     // MARK: - Private methods:
     private func showOrHideStubs() {
-        if !categories.isEmpty {
-            stubLabel.isHidden = true
-            stubImageView.isHidden = true
-            tableView.isHidden = false
-        } else {
-            tableView.isHidden = true
-            stubLabel.isHidden = false
-            stubImageView.isHidden = false
-        }
+        stubLabel.isHidden = !categories.isEmpty
+        stubImageView.isHidden = !categories.isEmpty
+        tableView.isHidden = categories.isEmpty
     }
     
     private func dismissCategoryVC() {

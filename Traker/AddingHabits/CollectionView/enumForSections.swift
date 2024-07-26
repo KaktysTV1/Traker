@@ -7,7 +7,7 @@
 
 import Foundation
 
-public enum sections: Int {
+enum Sections: Int {
     case emojiCell
     case colorCell
 }

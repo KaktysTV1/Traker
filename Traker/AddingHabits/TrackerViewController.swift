@@ -17,11 +17,13 @@ protocol TrackerCellDelegate: AnyObject {
 }
 
 final class TrackersViewController: UIViewController {
+    
+    
     // MARK: - Properties:
-    var currentDay: Int?
-    var categories: [TrackerCategory] = Mocks.trackers
-    var visibleCategories: [TrackerCategory] = []
-    var completedTrackers: [TrackerRecord] = []
+    private var currentDate: Date?
+    private var categories: [TrackerCategory] = Mocks.trackers
+    private var visibleCategories: [TrackerCategory] = []
+    private var completedTrackers: [TrackerRecord] = []
     
     // MARK: - Private properties:
     private let params = GeometricParams(cellCount: 2, leftInset: 16, rightInset: 16, cellSpacing: 9)
@@ -143,15 +145,9 @@ final class TrackersViewController: UIViewController {
     }
     
     private func showOrHideStubs() {
-        if !visibleCategories.isEmpty {
-            stubLabel.isHidden = true
-            stubImageView.isHidden = true
-            collectionView.isHidden = false
-        } else {
-            collectionView.isHidden = true
-            stubLabel.isHidden = false
-            stubImageView.isHidden = false
-        }
+        stubLabel.isHidden = !visibleCategories.isEmpty
+        stubImageView.isHidden = !visibleCategories.isEmpty
+        collectionView.isHidden = visibleCategories.isEmpty
     }
     
     private func reloadData() {
@@ -162,14 +158,19 @@ final class TrackersViewController: UIViewController {
         let filterText = (searchBar.searchTextField.text ?? "").lowercased()
         let component = Calendar.current.component(.weekday, from: datePicker.date)
         
-        currentDay = component
-        print(component)
+        let today = Date()
+        let calendar = Calendar.current
+        
+        let weekdayComponent = DateComponents(weekday: component)
+        currentDate = calendar.nextDate(after: today, matching: weekdayComponent, matchingPolicy: .nextTime)
+        
+        print(currentDate as Any)
         
         visibleCategories = categories.compactMap { category in
             let trackers = category.includedTrackers.filter { tracker in
                 let textCondition = filterText.isEmpty || tracker.name.lowercased().contains(filterText)
                 let dateCondition = tracker.schedule?.contains { weekDay in
-                    weekDay.calendarNumber == currentDay
+                    weekDay.calendarNumber == component
                 } == true
                 return textCondition && dateCondition
             }
@@ -197,7 +198,10 @@ final class TrackersViewController: UIViewController {
 
 // MARK: - UICollectionViewDelegateFlowLayout:
 extension TrackersViewController: UICollectionViewDelegateFlowLayout {
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    func collectionView(_ collectionView: UICollectionView,
+                        layout collectionViewLayout: UICollectionViewLayout,
+                        sizeForItemAt indexPath: IndexPath
+    ) -> CGSize {
         let availableWidth = collectionView.frame.size.width - params.paddingWidth
         let cellWidth = availableWidth / CGFloat(params.cellCount)
         return CGSize(width: cellWidth, height: 148)

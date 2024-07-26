@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StatisticsViewController: UIViewController {
+final class StatisticsViewController: UIViewController {
     // MARK: - Private properties:
     private lazy var stubLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 80, height: 80))
