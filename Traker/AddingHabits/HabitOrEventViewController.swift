@@ -1,13 +1,13 @@
 import Foundation
 import UIKit
 
-protocol TrackerCreatingViewControllerDelegate: AnyObject {
-    func transitTracker(_ tracker: Tracker,and category: String,from: TrackerCreatingViewController)
+protocol HabitOrEventViewControllerDelegate: AnyObject {
+    func getData(with tracker: Tracker, and category: String)
 }
 
 final class HabitOrEventViewController: UIViewController {
     // MARK: - Properties:
-    weak var delegate: HabitOrEventDelegate?
+    weak var delegate: HabitOrEventViewControllerDelegate?
     
     // MARK: - Private properties:
     private lazy var topTitle: UILabel = {
@@ -29,7 +29,7 @@ final class HabitOrEventViewController: UIViewController {
         button.backgroundColor = .YPBlack
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Привычка", for: .normal)
-        button.addTarget(self, action: #selector(openHabitVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(openHabitViewController), for: .touchUpInside)
         
         return button
     }()
@@ -43,7 +43,7 @@ final class HabitOrEventViewController: UIViewController {
         button.backgroundColor = .YPBlack
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle("Нерегулярное событие", for: .normal)
-        button.addTarget(self, action: #selector(openEventVC), for: .touchUpInside)
+        button.addTarget(self, action: #selector(openEventViewController), for: .touchUpInside)
         
         return button
     }()
@@ -79,23 +79,24 @@ final class HabitOrEventViewController: UIViewController {
         ])
     }
     
-    @objc private func openHabitVC() {
+    // MARK: - Objc-Methods:
+    @objc private func openHabitViewController() {
         let viewToPresent = TrackerCreatingViewController(trackerType: .habit)
         viewToPresent.delegate = self
         self.present(viewToPresent, animated: true)
     }
     
-    @objc private func openEventVC() {
+    @objc private func openEventViewController() {
         let viewToPresent = TrackerCreatingViewController(trackerType: .event)
         viewToPresent.delegate = self
         self.present(viewToPresent, animated: true)
     }
 }
 
-// MARK: - TrackerCreatingViewControllerDelegate:
-extension HabitOrEventViewController: TrackerCreatingViewControllerDelegate {
-    func transitTracker(_ tracker: Tracker, and category: String, from: TrackerCreatingViewController) {
+extension HabitOrEventViewController: TrackerCreatingDelegate {
+    func transitData(_ tracker: Tracker, and category: String) {
         self.dismiss(animated: true)
-        delegate?.addTracker(tracker, and: category, from: self)
+        delegate?.getData(with: tracker, and: category)
     }
 }
+

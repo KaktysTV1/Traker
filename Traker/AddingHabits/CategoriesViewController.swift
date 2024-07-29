@@ -8,21 +8,18 @@
 import Foundation
 import UIKit
 
-protocol NewCategoryVCProtocol: AnyObject {
-    func addNewCategory(_ value: String)
+protocol NewCategoryViewControllerProtocol: AnyObject {
+    func reloadTable()
 }
 
 final class CategoriesViewController: UIViewController, UITextFieldDelegate {
     // MARK: - Properties:
     weak var delegate: CategoryViewControllerDelegate?
-    var categories: [String] = ["Hobby"] {
-        didSet {
-            showOrHideStubs()
-        }
-    }
-    private var selectedCategory: String = ""
+    var categories: [String] = []
+    var selectedCategory: String = ""
     
     // MARK: - Private properties:
+    private let categoryStore = TrackerCategoryStore.shared
     private lazy var topTitle: UILabel = {
         let label = UILabel()
         label.text = "Категория"
@@ -92,8 +89,11 @@ final class CategoriesViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .YPWhite
+        
         configureScreenItems()
-        showOrHideStubs()
+        fetchCategoriesArray()
+        showOrHideEmptyLabels()
+        
     }
     
     // MARK: - Methods:
@@ -134,18 +134,28 @@ final class CategoriesViewController: UIViewController, UITextFieldDelegate {
         ])
     }
     // MARK: - Private methods:
-    private func showOrHideStubs() {
-        stubLabel.isHidden = !categories.isEmpty
-        stubImageView.isHidden = !categories.isEmpty
-        tableView.isHidden = categories.isEmpty
+    private func showOrHideEmptyLabels() {
+        if !categories.isEmpty {
+            stubLabel.isHidden = true
+            stubImageView.isHidden = true
+            tableView.isHidden = false
+        } else {
+            tableView.isHidden = true
+            stubLabel.isHidden = false
+            stubImageView.isHidden = false
+        }
     }
     
-    private func dismissCategoryVC() {
+    private func fetchCategoriesArray() {
+        categories = categoryStore.getCategoriesList()
+    }
+    
+    private func dismissCategoryViewController() {
         self.dismiss(animated: true)
     }
     
     @objc private func addButtonTapped() {
-        let viewToPresent = NewCategoryVC()
+        let viewToPresent = NewCategoryViewController()
         viewToPresent.delegate = self
         self.present(viewToPresent, animated: true)
     }
@@ -201,7 +211,7 @@ extension CategoriesViewController: UITableViewDelegate {
         }
         delegate?.selectedCategory = selectedCategory
         delegate?.showSelectedCategory()
-        dismissCategoryVC()
+        dismissCategoryViewController()
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
@@ -212,9 +222,10 @@ extension CategoriesViewController: UITableViewDelegate {
 }
 
 // MARK: - CategoriesViewControllerProtocol:
-extension CategoriesViewController: NewCategoryVCProtocol {
-    func addNewCategory(_ value: String) {
-        categories.append(value)
+extension CategoriesViewController: NewCategoryViewControllerProtocol {
+    func reloadTable() {
+        categories = categoryStore.getCategoriesList()
+        showOrHideEmptyLabels()
         tableView.reloadData()
     }
 }

@@ -7,14 +7,13 @@
 
 import UIKit
 
-final class TrackerCell: UICollectionViewCell {
+class TrackerCell: UICollectionViewCell {
     // MARK: - Properties:
     static let reuseID = "TrackersCell"
     weak var delegate: TrackerCellDelegate?
     // MARK: - Private properties:
     private var isCompleted: Bool = false
     private var trackerID: UUID? = nil
-    private var indexPath: IndexPath?
     private let plusImage = UIImage(named: "plus")
     private let doneImage = UIImage(named: "checkmark")
     private lazy var topView: UIView = {
@@ -92,8 +91,7 @@ final class TrackerCell: UICollectionViewCell {
                     emoji: String,
                     isEnabled: Bool,
                     isCompleted: Bool,
-                    completedDays: Int,
-                    indexPath: IndexPath) {
+                    completedDays: Int) {
         self.trackerID = id
         self.trackerNameLabel.text = name
         self.topView.backgroundColor = color
@@ -101,7 +99,6 @@ final class TrackerCell: UICollectionViewCell {
         self.plusButton.backgroundColor = color
         self.plusButton.isEnabled = isEnabled
         self.daysCounterLabel.text = "\(completedDays.days())"
-        self.indexPath = indexPath
         self.isCompleted = isCompleted
         
         let image = isCompleted ? doneImage : plusImage
@@ -154,7 +151,7 @@ final class TrackerCell: UICollectionViewCell {
     
     // MARK: - Objc-Methods:
     @objc private func plusButtonTapped() {
-        guard let id = trackerID, let indexPath = indexPath else { return }
-        delegate?.checkIfCompleted(for: id, at: indexPath)
+        guard let id = trackerID else { return }
+        delegate?.checkIfCompleted(for: id)
     }
 }
