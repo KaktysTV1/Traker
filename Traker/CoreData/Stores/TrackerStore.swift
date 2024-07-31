@@ -23,7 +23,7 @@ final class TrackerStore: NSObject  {
     private var context: NSManagedObjectContext
     private let recordStore = TrackerRecordStore.shared
     private var trackersFetchedResultsController: NSFetchedResultsController<TrackerCoreData>?
-       
+    
     // MARK: - Initializers:
     convenience override init() {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {

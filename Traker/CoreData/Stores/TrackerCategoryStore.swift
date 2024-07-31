@@ -2,15 +2,19 @@ import UIKit
 import CoreData
 
 protocol TrackerCategoryDelegate: AnyObject {
-    func didUpdateCategories()
+    func updateCategories()
 }
 
 final class TrackerCategoryStore: NSObject {
     // MARK: - Properties:
+    weak var delegate: TrackerCategoryDelegate?
     static let shared = TrackerCategoryStore()
     var categories: [TrackerCategory] {
-        let categoriesCD = getCategories()
-        guard let categories = try? categoriesCD.map({ try self.createCategoryFromCoreData($0) }) else {
+        guard
+            let categoriesCD = categoryFetchedResultsController.fetchedObjects,
+            let categories = try? categoriesCD.map({
+                try self.createCategoryFromCoreData($0)
+            }) else {
             return []
         }
         return categories
@@ -19,8 +23,7 @@ final class TrackerCategoryStore: NSObject {
     // MARK: - Private properties:
     private let context: NSManagedObjectContext
     private let trackerStore = TrackerStore.shared
-    
-    private lazy var categoryFRC: NSFetchedResultsController<TrackerCategoryCoreData> = {
+    private lazy var categoryFetchedResultsController: NSFetchedResultsController<TrackerCategoryCoreData> = {
         let fetchRequest = TrackerCategoryCoreData.fetchRequest()
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true)]
         
@@ -29,12 +32,9 @@ final class TrackerCategoryStore: NSObject {
             managedObjectContext: context,
             sectionNameKeyPath: nil,
             cacheName: nil)
+        controller.delegate = self
+        try? controller.performFetch()
         
-        do {
-            try controller.performFetch()
-        } catch {
-            print(CDErrors.categoryFetchedResultsControllerPerformFetchError)
-        }
         return controller
     }()
     
@@ -65,11 +65,14 @@ final class TrackerCategoryStore: NSObject {
     }
     
     func deleteCategory(_ model: TrackerCategoryCoreData) {
-        guard let objectToDelete = categoryFRC.fetchedObjects?.first(where: { $0.name == model.name }) else {
+        guard
+            let objectToDelete = categoryFetchedResultsController.fetchedObjects?.first(where: {
+                $0.name == model.name
+            }) else {
             print("Не удалось найти категорию для удаления")
             return
         }
-        categoryFRC.managedObjectContext.delete(objectToDelete)
+        categoryFetchedResultsController.managedObjectContext.delete(objectToDelete)
         saveContext()
     }
     
@@ -101,19 +104,6 @@ final class TrackerCategoryStore: NSObject {
         return category
     }
     
-    func getCategoriesList() -> [String] {
-        let request = TrackerCategoryCoreData.fetchRequest()
-        request.returnsObjectsAsFaults = false
-        var stringArray: [String] = []
-        do {
-            let objects = try context.fetch(request)
-            stringArray = objects.compactMap { try? createCategoryFromCoreData(_:$0)}.map { $0.name }
-        } catch {
-            print("Не удалось получить категории")
-        }
-        return stringArray
-    }
-    
     func getCategories() -> [TrackerCategoryCoreData] {
         let request = TrackerCategoryCoreData.fetchRequest()
         request.returnsObjectsAsFaults = false
@@ -128,7 +118,7 @@ final class TrackerCategoryStore: NSObject {
     }
     
     func getCategoryWith(title: String) throws -> TrackerCategoryCoreData? {
-        let request = categoryFRC.fetchRequest
+        let request = TrackerCategoryCoreData.fetchRequest()
         request.predicate = NSPredicate(format: "%K == %@", #keyPath(TrackerCategoryCoreData.name), title)
         do {
             let category = try context.fetch(request)
@@ -139,3 +129,9 @@ final class TrackerCategoryStore: NSObject {
     }
 }
 
+// MARK: - NSFetchedResultsControllerDelegate
+extension TrackerCategoryStore: NSFetchedResultsControllerDelegate {
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        delegate?.updateCategories()
+    }
+}

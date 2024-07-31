@@ -17,8 +17,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        window?.rootViewController = TabBarViewController()
+        window?.rootViewController = SplashViewController()
         window?.makeKeyAndVisible()
+        
+        DaysTransformer.register()
+        ColorTransformer.register()
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
