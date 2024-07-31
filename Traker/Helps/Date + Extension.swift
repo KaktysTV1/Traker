@@ -8,8 +8,12 @@
 import Foundation
 
 extension Date {
-    var onlyDate: DateComponents {
-        Calendar.current.dateComponents([.year, .month, .day], from: self)
+    func sameDay(_ date: Date) -> Bool {
+        Calendar.current.compare(self, to: date, toGranularity: .day) == .orderedSame
+    }
+    
+    func dayBefore(_ date: Date) -> Bool {
+        Calendar.current.compare(self, to: date, toGranularity: .day) == .orderedAscending
     }
 }
 

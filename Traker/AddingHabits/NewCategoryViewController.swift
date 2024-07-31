@@ -7,12 +7,13 @@
 
 import UIKit
 
-final class NewCategoryVC: UIViewController {
+final class NewCategoryViewController: UIViewController {
     // MARK: - Properties:
-    weak var delegate: NewCategoryVCProtocol?
+    weak var delegate: NewCategoryViewControllerProtocol?
     
     // MARK: - Private properties:
     private var categoryName: String = ""
+    private let categoryStore = TrackerCategoryStore.shared
     
     private lazy var topTitle: UILabel = {
         let label = UILabel()
@@ -33,6 +34,7 @@ final class NewCategoryVC: UIViewController {
         field.textColor = .YPBlack
         field.delegate = self
         field.translatesAutoresizingMaskIntoConstraints = false
+        field.addTarget(self, action: #selector(textValueChanged), for: .editingChanged)
         
         return field
     }()
@@ -57,13 +59,14 @@ final class NewCategoryVC: UIViewController {
         setupScreenItems()
         textField.becomeFirstResponder()
         setupToHideKeyboardOnTapOnView()
+        doneButtonCondition()
     }
     
     // MARK: - Private methods:
     private func setupScreenItems() {
-        view.addSubview(topTitle)
-        view.addSubview(textField)
-        view.addSubview(doneButton)
+        self.view.addSubview(topTitle)
+        self.view.addSubview(textField)
+        self.view.addSubview(doneButton)
         
         NSLayoutConstraint.activate([
             topTitle.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 39),
@@ -82,14 +85,31 @@ final class NewCategoryVC: UIViewController {
         ])
     }
     
+    // MARK: - Objc-Mehtods:
     @objc private func doneButtonTapped() {
-        delegate?.addNewCategory(categoryName)
+        do {
+            try categoryStore.createCoreDataCategory(with: categoryName)
+        } catch {
+            print(CDErrors.creatingCoreDataCategoryError)
+        }
+        
+        delegate?.reloadTable()
         self.dismiss(animated: true)
     }
+    
+    private func doneButtonCondition() {
+        guard let currentText = textField.text else {
+            return
+        }
+        doneButton.isEnabled = !currentText.isEmpty
+    }
+    
+    @objc private func textValueChanged() {
+        doneButtonCondition()
+    }
 }
-
 // MARK: - UITextFieldDelegate:
-extension NewCategoryVC: UITextFieldDelegate {
+extension NewCategoryViewController: UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true

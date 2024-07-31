@@ -25,10 +25,13 @@ protocol CategoryViewControllerDelegate: AnyObject {
     func showSelectedCategory()
 }
 
+protocol TrackerCreatingDelegate: AnyObject {
+    func transitData(_ tracker: Tracker, and category: String)
+}
+
 final class TrackerCreatingViewController: UIViewController {
     // MARK: - Properties:
-    
-    weak var delegate: TrackerCreatingViewControllerDelegate?
+    weak var delegate: TrackerCreatingDelegate?
     var trackerType: HabitOrEvent
     var selectedDays: [Weekday] = [] {
         didSet {
@@ -420,7 +423,7 @@ final class TrackerCreatingViewController: UIViewController {
         }
         guard let tracker = tracker else { return }
         self.dismiss(animated: true)
-        delegate?.transitTracker(tracker, and: selectedCategory, from: self)
+        delegate?.transitData(tracker, and: selectedCategory)
     }
     
     @objc private func showCategories() {
@@ -514,9 +517,9 @@ extension TrackerCreatingViewController: UITextFieldDelegate {
 extension TrackerCreatingViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case Sections.emojiCell.rawValue:
+        case sectionsEnum.emojiCell.rawValue:
             return emojies.count
-        case Sections.colorCell.rawValue:
+        case sectionsEnum.colorCell.rawValue:
             return colors.count
         default: return 0
         }
@@ -524,7 +527,7 @@ extension TrackerCreatingViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         switch indexPath.section {
-        case Sections.emojiCell.rawValue:
+        case sectionsEnum.emojiCell.rawValue:
             guard let emojiCell = collectionView.dequeueReusableCell(withReuseIdentifier: EmojiCell.reuseIdentifier, for: indexPath) as? EmojiCell else { return UICollectionViewCell()}
             emojiCell.emojiLabel.text = emojies[indexPath.row]
             if selectedEmojiIndexPath == indexPath {
@@ -533,7 +536,7 @@ extension TrackerCreatingViewController: UICollectionViewDataSource {
             }
             return emojiCell
             
-        case Sections.colorCell.rawValue:
+        case sectionsEnum.colorCell.rawValue:
             guard let colorCell = collectionView.dequeueReusableCell(withReuseIdentifier: ColorCell.reuseIdentifier, for: indexPath) as? ColorCell else { return UICollectionViewCell()}
             colorCell.colorView.backgroundColor = colors[indexPath.row]
             if selectedColorIndexPath == indexPath {
@@ -552,9 +555,9 @@ extension TrackerCreatingViewController: UICollectionViewDataSource {
         headerView.titleLabel.font = .boldSystemFont(ofSize: 19)
         
         switch indexPath.section {
-        case Sections.emojiCell.rawValue:
-            headerView.titleLabel.text = "Emoji"
-        case Sections.colorCell.rawValue:
+        case sectionsEnum.emojiCell.rawValue:
+            headerView.titleLabel.text = "Эмодзи"
+        case sectionsEnum.colorCell.rawValue:
             headerView.titleLabel.text = "Цвет"
         default:
             headerView.titleLabel.text = "1"
@@ -606,7 +609,7 @@ extension TrackerCreatingViewController: UICollectionViewDelegateFlowLayout {
 extension TrackerCreatingViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         switch indexPath.section {
-        case Sections.emojiCell.rawValue:
+        case sectionsEnum.emojiCell.rawValue:
             if selectedEmojiIndexPath == indexPath {
                 selectedEmojiIndexPath = nil
                 selectedEmoji = ""
@@ -614,7 +617,7 @@ extension TrackerCreatingViewController: UICollectionViewDelegate {
                 selectedEmojiIndexPath = indexPath
             }
             collectionView.reloadData()
-        case Sections.colorCell.rawValue:
+        case sectionsEnum.colorCell.rawValue:
             if selectedColorIndexPath == indexPath {
                 selectedColorIndexPath = nil
                 selectedColor = nil

@@ -1,13 +1,6 @@
-//
-//  WeekDay.swift
-//  Traker
-//
-//  Created by Андрей Чупрыненко on 24.07.2024.
-//
-
 import Foundation
 
-enum Weekday: String, CaseIterable {
+enum Weekday: String, CaseIterable, Codable {
     case Monday = "Понедельник"
     case Tuesday = "Вторник"
     case Wednesday = "Среда"
