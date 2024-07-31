@@ -1,6 +1,6 @@
 import UIKit
 
-class FirstPageViewController: UIViewController {
+final class FirstPageViewController: UIViewController {
     // MARK: - Private Properties:
     private lazy var imageView: UIImageView = {
         let image = UIImage(named: "firstScreen")

@@ -73,10 +73,11 @@ class OnboardingViewController: UIPageViewController {
     
     // MARK: - Objc-Methods:
     @objc private func wowButtonTapped() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            fatalError("Не удалось инициализировать AppDelegate")
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let window = scene.windows.first else {
+            fatalError("Не удалось получить текущее окно")
         }
-        appDelegate.window?.rootViewController = TabBarViewController()
+        window.rootViewController = TabBarViewController()
     }
 }
 // MARK: - UIPageViewControllerDataSource:

@@ -1,6 +1,6 @@
 import UIKit
 
-class SecondPageViewController: UIViewController {
+final class SecondPageViewController: UIViewController {
     // MARK: - Private Properties:
     private let image = UIImage(named: "secondScreen")
     private lazy var imageView: UIImageView = {

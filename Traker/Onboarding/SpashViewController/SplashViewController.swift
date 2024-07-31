@@ -35,15 +35,15 @@ final class SplashViewController: UIViewController {
     }
     
     private func checkIfFirstLaunch() {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-            fatalError("Не удалось инициализировать AppDelegate")
+        guard let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {
+            fatalError("Не удалось инициализировать SceneDelegate")
         }
-        if wasLaunchedBefore == false {
-            appDelegate.window?.rootViewController = OnboardingViewController()
+
+        if firstLaunchStorage.wasLaunchedBefore == false {
+            sceneDelegate.window?.rootViewController = OnboardingViewController()
             firstLaunchStorage.wasLaunchedBefore = true
         } else {
-            appDelegate.window?.rootViewController = TabBarViewController()
+            sceneDelegate.window?.rootViewController = TabBarViewController()
         }
     }
-    
 }
