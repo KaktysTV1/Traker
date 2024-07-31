@@ -118,6 +118,7 @@
 		EF882E992B108E6400E957FD /* Traker */ = {
 			isa = PBXGroup;
 			children = (
+				EF8A76642C5A1674008FC17D /* Onboarding */,
 				EF8A75F42C50D4B2008FC17D /* Setings */,
 				EFB5C8EA2B15E3DE00C6D900 /* AddingHabits */,
 				EFB5C8E92B15DD5B00C6D900 /* TabBarController */,
@@ -194,6 +195,13 @@
 				EF8A762C2C5792FE008FC17D /* ColorTransformer.swift */,
 			);
 			path = Transformable;
+			sourceTree = "<group>";
+		};
+		EF8A76642C5A1674008FC17D /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 		EFB5C8E92B15DD5B00C6D900 /* TabBarController */ = {

@@ -556,7 +556,7 @@ extension TrackerCreatingViewController: UICollectionViewDataSource {
         
         switch indexPath.section {
         case sectionsEnum.emojiCell.rawValue:
-            headerView.titleLabel.text = "Emoji"
+            headerView.titleLabel.text = "Эмодзи"
         case sectionsEnum.colorCell.rawValue:
             headerView.titleLabel.text = "Цвет"
         default:

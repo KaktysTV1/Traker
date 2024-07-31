@@ -135,15 +135,9 @@ final class CategoriesViewController: UIViewController, UITextFieldDelegate {
     }
     // MARK: - Private methods:
     private func showOrHideEmptyLabels() {
-        if !categories.isEmpty {
-            stubLabel.isHidden = true
-            stubImageView.isHidden = true
-            tableView.isHidden = false
-        } else {
-            tableView.isHidden = true
-            stubLabel.isHidden = false
-            stubImageView.isHidden = false
-        }
+        stubLabel.isHidden = categories.isEmpty
+        stubImageView.isHidden = categories.isEmpty
+        tableView.isHidden = !categories.isEmpty
     }
     
     private func fetchCategoriesArray() {
