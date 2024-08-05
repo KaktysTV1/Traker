@@ -1,0 +1,1211 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */;
+			buildPhases = (
+			);
+			dependencies = (
+			);
+			name = SwiftLint;
+			productName = SwiftLint;
+		};
+		899318C1CEDE586664EC232A68069570 /* YandexMobileMetrica */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 83787D0EC5DA7713B7C6D32C1D11D707 /* Build configuration list for PBXAggregateTarget "YandexMobileMetrica" */;
+			buildPhases = (
+				6D2995F93765283CDFA66CFB2B2808F6 /* [CP] Copy XCFrameworks */,
+			);
+			dependencies = (
+			);
+			name = YandexMobileMetrica;
+			productName = YandexMobileMetrica;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		02501F8DFC93FDF59CFA3E9C8FD4D0A6 /* Pods-Traker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACDA19AE960FADD9ABC2924CC0AAD22 /* Pods-Traker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C4F5B54863F5F67869A05CB65B0D6FC /* Pods-Traker-TrakerUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBE3D7DDF734CECE4DED0D40DC7F281D /* Pods-Traker-TrakerUITests-dummy.m */; };
+		5C3CBEF7E8CF2C72F7020D6D11D53C0F /* Pods-Traker-TrakerUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E7E23D9F091FFFC73B800027312E730 /* Pods-Traker-TrakerUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6BA779B1833FFB6E8AD0323135A5E942 /* Pods-Traker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D41FDE6DCC233EFEA9D5DA70060AF95A /* Pods-Traker-dummy.m */; };
+		9BB050E77407DF9CBA7538B336BC311E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		B5497CD3CAEE2E9EA37F2383199B4262 /* Pods-TrakerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEC631D168373F350BB8C931F8656221 /* Pods-TrakerTests-dummy.m */; };
+		B9732503888ED3988850E916053B2B6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		CD87D3ABF599F57DDB577B98ADB886D5 /* Pods-TrakerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DA41C679D7F236A6FD730FF26144359 /* Pods-TrakerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFAC23359F15DDB86116EE7FCA1EC374 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		203BCBCFCFDC0E42B676BAFC9AB57C9E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		3590277433CD5F15AE1823537AC20124 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52B60EC2A583F24ACBB69C113F5488B9;
+			remoteInfo = SwiftLint;
+		};
+		715353B4346044A7F2BEDE608EC0227F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2D1200B4523DC5BCE8CC3149464E78C8;
+			remoteInfo = "Pods-Traker";
+		};
+		801B68F63F9221C818BF68E65045E3C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899318C1CEDE586664EC232A68069570;
+			remoteInfo = YandexMobileMetrica;
+		};
+		BB17ADC491E60C68D7D457D635746C09 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 899318C1CEDE586664EC232A68069570;
+			remoteInfo = YandexMobileMetrica;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0123BF805D5C952D852419291DF9DB86 /* YMMYandexMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMYandexMetrica.h"; sourceTree = "<group>"; };
+		01EACAEAAEDA5669E6941E454B13F46E /* Pods-Traker-TrakerUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Traker-TrakerUITests-frameworks.sh"; sourceTree = "<group>"; };
+		02899014CEBDA8F167B55AA8ABB6E345 /* Pods-Traker-TrakerUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Traker-TrakerUITests.modulemap"; sourceTree = "<group>"; };
+		0319F242A29F1B417C0901BCD9E326E9 /* YMMYandexMetricaPreloadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPreloadInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPreloadInfo.h"; sourceTree = "<group>"; };
+		03B9E6BF457997AAB4D87A265DDF9A32 /* YMMStackTraceElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMStackTraceElement.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMStackTraceElement.h"; sourceTree = "<group>"; };
+		03E233F2BBB2A48BB063909643FAB804 /* YMMYandexMetricaReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMYandexMetricaReporting.h"; sourceTree = "<group>"; };
+		0604116D1C34803EA774F89620C7A0D5 /* YMMYandexMetricaConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMYandexMetricaConfiguration.h"; sourceTree = "<group>"; };
+		06D248ED5907217BE0D86C2583E2BAE5 /* YMMCompletionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMCompletionBlocks.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMCompletionBlocks.h"; sourceTree = "<group>"; };
+		0718DA735A33F81FF71FEB39FA2A50C6 /* Pods-Traker-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Traker-acknowledgements.markdown"; sourceTree = "<group>"; };
+		081985CCDBFA434F556BCC2C3A3E7A72 /* YMMReporterConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMReporterConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMReporterConfiguration.h"; sourceTree = "<group>"; };
+		0A5C2654A2D6D7F1EE9A52EB2223CD81 /* YMMCompletionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMCompletionBlocks.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMCompletionBlocks.h"; sourceTree = "<group>"; };
+		1052BAB398C1DC01297BF9BA808C377B /* YMMYandexMetricaPlugins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPlugins.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPlugins.h"; sourceTree = "<group>"; };
+		1157A5671FFEAD7AC62077E8BF8BFB19 /* YMMYandexMetricaPreloadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPreloadInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPreloadInfo.h"; sourceTree = "<group>"; };
+		13879E419487FE2DEDFACF4C3E877E5B /* YMMYandexMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetrica.h"; sourceTree = "<group>"; };
+		13CC8BCC2F039E5D08F6BF374B990CCC /* YandexMobileMetricaCrashes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetricaCrashes-umbrella.h"; path = "dynamic/YandexMobileMetricaCrashes.xcframework/tvos-arm64/YandexMobileMetricaCrashes.framework/Headers/YandexMobileMetricaCrashes-umbrella.h"; sourceTree = "<group>"; };
+		15301DB363B7FA5605F25308301910BD /* YMMAdRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMAdRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMAdRevenueInfo.h"; sourceTree = "<group>"; };
+		16BD7D6AAF1C6B7A5BA197F54E390AF1 /* YMMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMError.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMError.h"; sourceTree = "<group>"; };
+		16C69A5EE7875F28CD3A3D9022A5A76A /* YandexMobileMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YandexMobileMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YandexMobileMetrica.h"; sourceTree = "<group>"; };
+		18EAAF77DF187B871E59056FEECE8E56 /* YMMStackTraceElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMStackTraceElement.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMStackTraceElement.h"; sourceTree = "<group>"; };
+		1A2C91DAF7727CFC2DBCEE2952F6128A /* YMMVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMVersion.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMVersion.h"; sourceTree = "<group>"; };
+		1BFF417AF358E5657803E83A98822B47 /* YMMCompletionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMCompletionBlocks.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMCompletionBlocks.h"; sourceTree = "<group>"; };
+		1D361008CABAA581161253FD74A5D575 /* YMMPluginErrorDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMPluginErrorDetails.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMPluginErrorDetails.h"; sourceTree = "<group>"; };
+		1EAB2B21632775220A0A077154828D6B /* YMMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMError.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMError.h"; sourceTree = "<group>"; };
+		1F4FC300027212B4FDAA250F5D6644CF /* Pods-Traker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Traker.modulemap"; sourceTree = "<group>"; };
+		24715B793CD0D62FFF8C88FAE6D496DB /* YMMPluginErrorDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMPluginErrorDetails.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMPluginErrorDetails.h"; sourceTree = "<group>"; };
+		27A490D59ACBDCAE2C70BA07E5FB1390 /* Pods-TrakerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TrakerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2B5EF11DBDECB7B85EDEA3F0E682CD2E /* YMMStackTraceElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMStackTraceElement.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMStackTraceElement.h"; sourceTree = "<group>"; };
+		2DF02436B32B2AB9D1A4EB4FD91E836A /* YMMYandexMetricaPreloadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPreloadInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPreloadInfo.h"; sourceTree = "<group>"; };
+		2E316CC18147B86AECE64BE318EE7371 /* YandexMobileMetrica.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YandexMobileMetrica.release.xcconfig; sourceTree = "<group>"; };
+		2E748B7FF0CD08695076BB345A49EFD3 /* YandexMobileMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YandexMobileMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YandexMobileMetrica.h"; sourceTree = "<group>"; };
+		322A4DA4CC1B7719F4747D990E1379DC /* Pods-Traker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Traker.release.xcconfig"; sourceTree = "<group>"; };
+		3B25154BC76D327D8717442B527EDB69 /* Pods-TrakerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrakerTests.release.xcconfig"; sourceTree = "<group>"; };
+		3B79D076A770967CEA8F9721687F67F4 /* Pods-Traker-TrakerUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Traker-TrakerUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3D0A5B12C28FFF2134033C12CB9E36CD /* YMMYandexMetricaConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaConfiguration.h"; sourceTree = "<group>"; };
+		3E11194D141F8C09133770F9CCC821A1 /* Pods-Traker-TrakerUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Traker-TrakerUITests-Info.plist"; sourceTree = "<group>"; };
+		3E7E23D9F091FFFC73B800027312E730 /* Pods-Traker-TrakerUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Traker-TrakerUITests-umbrella.h"; sourceTree = "<group>"; };
+		3EF860696A8B8874443B0A4A27EA99BC /* YMMVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMVersion.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMVersion.h"; sourceTree = "<group>"; };
+		3FA4F1AA6DF8E04D399A12F9D9523477 /* YandexMobileMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YandexMobileMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YandexMobileMetrica.h"; sourceTree = "<group>"; };
+		3FB77E9DA3D58DB96871332A3B08BF7F /* Pods-Traker */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Traker"; path = Pods_Traker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4694BDF60F37EF1626B9B1B0C69D91CF /* YandexMobileMetrica.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = YandexMobileMetrica.xcframework; path = dynamic/YandexMobileMetrica.xcframework; sourceTree = "<group>"; };
+		4714C51F85FE8F7759BC624395B88A11 /* YMMECommerce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMECommerce.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMECommerce.h"; sourceTree = "<group>"; };
+		49138528EC9F25A7B4F37EADAD167583 /* YMMProfileAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMProfileAttribute.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMProfileAttribute.h"; sourceTree = "<group>"; };
+		4F9C6507C030FA202DFEFF3014A41A77 /* YMMUserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMUserProfile.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMUserProfile.h"; sourceTree = "<group>"; };
+		5048B40EA176B6D1DAD454636E4D5E70 /* YMMRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMRevenueInfo.h"; sourceTree = "<group>"; };
+		50B85D5ACB3CB87796956C7C0971BDC8 /* YMMECommerce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMECommerce.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMECommerce.h"; sourceTree = "<group>"; };
+		50D133BC956BF47DA6BD32C9F4EF0A22 /* YMMYandexMetricaConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMYandexMetricaConfiguration.h"; sourceTree = "<group>"; };
+		576B0E15B41659C15601F085F55166E0 /* YandexMobileMetricaCrashes.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = YandexMobileMetricaCrashes.xcframework; path = dynamic/YandexMobileMetricaCrashes.xcframework; sourceTree = "<group>"; };
+		580ADE43271002403475F0D2A1D3673D /* YMMAdRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMAdRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMAdRevenueInfo.h"; sourceTree = "<group>"; };
+		59E9334E0D9D105F058A9D017316F984 /* YMMYandexMetricaPluginReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPluginReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPluginReporting.h"; sourceTree = "<group>"; };
+		5A3AB0E4DDC9CAA46B49C8958D6A2968 /* YandexMobileMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YandexMobileMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YandexMobileMetrica.h"; sourceTree = "<group>"; };
+		5AB91BB28C66579415F323072F096FE9 /* YandexMobileMetrica-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "YandexMobileMetrica-xcframeworks.sh"; sourceTree = "<group>"; };
+		5AC39D03B3711B7DCABF960950EE18C9 /* YMMYandexMetricaReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaReporting.h"; sourceTree = "<group>"; };
+		5CA0B66BC7232F3A1D8F069657CDD01D /* Pods-TrakerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TrakerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D1D8071C8EE31EFF1074400519BE416 /* YMMReporterConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMReporterConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMReporterConfiguration.h"; sourceTree = "<group>"; };
+		5F82153E5A25EB578D24FBE928CF8893 /* YMMYandexMetricaPlugins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPlugins.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPlugins.h"; sourceTree = "<group>"; };
+		61E8EA6DA11F476542A811D3B767BE3A /* YMMPluginErrorDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMPluginErrorDetails.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMPluginErrorDetails.h"; sourceTree = "<group>"; };
+		662554D2BF280F4B03174E92E7908B7C /* YMMYandexMetricaPluginReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPluginReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPluginReporting.h"; sourceTree = "<group>"; };
+		6690336A30813B823E4FA63DE5C25F43 /* YandexMobileMetricaCrashes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetricaCrashes-umbrella.h"; path = "dynamic/YandexMobileMetricaCrashes.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetricaCrashes.framework/Headers/YandexMobileMetricaCrashes-umbrella.h"; sourceTree = "<group>"; };
+		67B5206CEE2381A22904C15733FD69E9 /* Pods-Traker-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Traker-frameworks.sh"; sourceTree = "<group>"; };
+		6ACDA19AE960FADD9ABC2924CC0AAD22 /* Pods-Traker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Traker-umbrella.h"; sourceTree = "<group>"; };
+		6B48956C24D5FA447C91CEB760441397 /* YMMYandexMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetrica.h"; sourceTree = "<group>"; };
+		6BC98A736ADF9CBF3B3B93F2DD0CA41F /* YMMRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMRevenueInfo.h"; sourceTree = "<group>"; };
+		6BE8F597B5E8ED922816A37403C01DC9 /* YMMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMError.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMError.h"; sourceTree = "<group>"; };
+		6E9C729A55D5469A5D934EE68A7759F1 /* YMMProfileAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMProfileAttribute.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMProfileAttribute.h"; sourceTree = "<group>"; };
+		708DAFD0DB3AD40440E9D65A657ED0EC /* YMMYandexMetricaConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaConfiguration.h"; sourceTree = "<group>"; };
+		70957960F4979F5A9B8D67F2E91B8479 /* YMMAdRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMAdRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMAdRevenueInfo.h"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		744984EB0DA478A5911BB4632BDB2BA2 /* YandexMobileMetrica.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YandexMobileMetrica.debug.xcconfig; sourceTree = "<group>"; };
+		762ECD01800EA8D24ED257A66BC8812F /* YMMUserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMUserProfile.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMUserProfile.h"; sourceTree = "<group>"; };
+		76521AF5FB031F3F4A6653DE709D3B61 /* Pods-TrakerTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-TrakerTests"; path = Pods_TrakerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A550D3E438A4CF4B9F1742B165A7B8F /* YandexMobileMetrica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetrica-umbrella.h"; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YandexMobileMetrica-umbrella.h"; sourceTree = "<group>"; };
+		7D83EBD4598D1ADC93EF79FCE8D624EC /* YMMYandexMetricaPluginReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPluginReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPluginReporting.h"; sourceTree = "<group>"; };
+		7E317DAA8F62FA0C26B56A20583F997A /* YMMReporterConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMReporterConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMReporterConfiguration.h"; sourceTree = "<group>"; };
+		80CB32E023EE23807B4C8E9A3E7F02E3 /* YMMRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMRevenueInfo.h"; sourceTree = "<group>"; };
+		87944B352B3A4D7C266CD3A4BE03315D /* SwiftLint.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.release.xcconfig; sourceTree = "<group>"; };
+		89301B144634BCCACA580483F5875064 /* Pods-Traker-TrakerUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Traker-TrakerUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		8979DD0EC2D95485F0B7C08746B70CF4 /* YMMVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMVersion.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMVersion.h"; sourceTree = "<group>"; };
+		8BAD183685FD8DD7A04B4D03C81B698A /* Pods-Traker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Traker.debug.xcconfig"; sourceTree = "<group>"; };
+		8DA41C679D7F236A6FD730FF26144359 /* Pods-TrakerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TrakerTests-umbrella.h"; sourceTree = "<group>"; };
+		944A7CBD0A4F17A7005A7797A266736C /* YMMECommerce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMECommerce.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMECommerce.h"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E856675E731FA0B8527B577C8604418 /* YMMCompletionBlocks.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMCompletionBlocks.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMCompletionBlocks.h"; sourceTree = "<group>"; };
+		A0A1AF67857BDE90DD67B3C91E61FC54 /* Pods-Traker-TrakerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Traker-TrakerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A0CED859C1C51ECCC2252DCB27BDC0A3 /* YMMStackTraceElement.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMStackTraceElement.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMStackTraceElement.h"; sourceTree = "<group>"; };
+		A13F64762285995AEC7CA9F18F4E3704 /* YMMYandexMetricaReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMYandexMetricaReporting.h"; sourceTree = "<group>"; };
+		A20DB3993107BD2939CEB1AC3A02151E /* YMMECommerce.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMECommerce.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMECommerce.h"; sourceTree = "<group>"; };
+		A62052D3A9CECA511B25D9067923DD51 /* YMMVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMVersion.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMVersion.h"; sourceTree = "<group>"; };
+		A8D072CBDB8CABB6657626E6C776D2E2 /* Pods-Traker-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Traker-acknowledgements.plist"; sourceTree = "<group>"; };
+		AA28EE62C6D0033618B26C0AD3905DB8 /* YMMRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMRevenueInfo.h"; sourceTree = "<group>"; };
+		ACDD29E6CACA3D1A5366221C5F804AD5 /* YandexMobileMetrica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetrica-umbrella.h"; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YandexMobileMetrica-umbrella.h"; sourceTree = "<group>"; };
+		AEC631D168373F350BB8C931F8656221 /* Pods-TrakerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TrakerTests-dummy.m"; sourceTree = "<group>"; };
+		B0DEA18751FEF21B1021E65A3D3E643A /* YMMProfileAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMProfileAttribute.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMProfileAttribute.h"; sourceTree = "<group>"; };
+		B326ED7DA8841CAFCB95D109CB1963C6 /* Pods-TrakerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-TrakerTests.modulemap"; sourceTree = "<group>"; };
+		B67FA02E8E4676C94F801E4A6D053F94 /* Pods-Traker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Traker-Info.plist"; sourceTree = "<group>"; };
+		B9CCAE6557A6CCC8866A86D39404AA8C /* YMMYandexMetrica.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetrica.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMYandexMetrica.h"; sourceTree = "<group>"; };
+		BA4BEF1949A21FB9CE92E5495951E93B /* YMMErrorRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMErrorRepresentable.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMErrorRepresentable.h"; sourceTree = "<group>"; };
+		BBE3D7DDF734CECE4DED0D40DC7F281D /* Pods-Traker-TrakerUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Traker-TrakerUITests-dummy.m"; sourceTree = "<group>"; };
+		C0E77142E17B268654A0AE9C39C2CE0B /* Pods-TrakerTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrakerTests-Info.plist"; sourceTree = "<group>"; };
+		C3844A2E6D4F8563DB7A2350156A238F /* YMMYandexMetricaPlugins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPlugins.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPlugins.h"; sourceTree = "<group>"; };
+		C51974BDB990BBF654CFCC65F5FDE2AD /* YMMErrorRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMErrorRepresentable.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMErrorRepresentable.h"; sourceTree = "<group>"; };
+		C6B837C32BA58E359C14EF157D3CF835 /* YMMYandexMetricaPlugins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPlugins.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPlugins.h"; sourceTree = "<group>"; };
+		CA880A951BD369A4A250CA0E64653E79 /* YMMUserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMUserProfile.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMUserProfile.h"; sourceTree = "<group>"; };
+		D16B107641614B3497AE8256827C43AD /* YMMProfileAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMProfileAttribute.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMProfileAttribute.h"; sourceTree = "<group>"; };
+		D2B52FEDD323CA32865D74B99526C49B /* YMMError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMError.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMError.h"; sourceTree = "<group>"; };
+		D41FDE6DCC233EFEA9D5DA70060AF95A /* Pods-Traker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Traker-dummy.m"; sourceTree = "<group>"; };
+		D55E3F612F9848F51E0F5386D3AD254A /* YMMYandexMetricaPluginReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPluginReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPluginReporting.h"; sourceTree = "<group>"; };
+		D90FE1637EF5CE941EB0BFAFC046B94C /* YMMUserProfile.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMUserProfile.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMUserProfile.h"; sourceTree = "<group>"; };
+		D94D3BED7B3C701C763A2434F3B51C01 /* Pods-Traker-TrakerUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Traker-TrakerUITests"; path = Pods_Traker_TrakerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC622FD506EA7CB10BE7619258D7EB76 /* SwiftLint.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftLint.debug.xcconfig; sourceTree = "<group>"; };
+		E0996711A63F30DD129FB50628784108 /* YandexMobileMetrica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetrica-umbrella.h"; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YandexMobileMetrica-umbrella.h"; sourceTree = "<group>"; };
+		E476260DE00DDC30ACDA0F84D79DBE15 /* YMMReporterConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMReporterConfiguration.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMReporterConfiguration.h"; sourceTree = "<group>"; };
+		E47CB5F979D10303CD791DBF554180EC /* YMMErrorRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMErrorRepresentable.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_armv7/YandexMobileMetrica.framework/Headers/YMMErrorRepresentable.h"; sourceTree = "<group>"; };
+		E8319BDA6573D14BCBCB8F70B93ECC17 /* YMMPluginErrorDetails.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMPluginErrorDetails.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMPluginErrorDetails.h"; sourceTree = "<group>"; };
+		E8715461D5A8E490F6C979F2723FFC37 /* YMMYandexMetricaPreloadInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaPreloadInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64/YandexMobileMetrica.framework/Headers/YMMYandexMetricaPreloadInfo.h"; sourceTree = "<group>"; };
+		E8A0F3A890A389C63EC2AC01900A8F17 /* YMMYandexMetricaReporting.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMYandexMetricaReporting.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMYandexMetricaReporting.h"; sourceTree = "<group>"; };
+		EA89EBB947298030ABD09B811C0C1CDB /* YandexMobileMetrica-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetrica-umbrella.h"; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YandexMobileMetrica-umbrella.h"; sourceTree = "<group>"; };
+		EE441224E5245D01260A268D455EE558 /* YandexMobileMetricaCrashes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetricaCrashes-umbrella.h"; path = "dynamic/YandexMobileMetricaCrashes.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetricaCrashes.framework/Headers/YandexMobileMetricaCrashes-umbrella.h"; sourceTree = "<group>"; };
+		EED83A8505B692BD5110D07DAA384BAF /* Pods-Traker-TrakerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Traker-TrakerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F1377E6963CD715FA2F865CABC07FF52 /* Pods-TrakerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TrakerTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F16E0996BBE9ACB1B453E184D29C7DEE /* YandexMobileMetricaCrashes-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "YandexMobileMetricaCrashes-umbrella.h"; path = "dynamic/YandexMobileMetricaCrashes.xcframework/ios-arm64_armv7/YandexMobileMetricaCrashes.framework/Headers/YandexMobileMetricaCrashes-umbrella.h"; sourceTree = "<group>"; };
+		F727C7F2D3B18DAC0DA3E4410471D344 /* YMMErrorRepresentable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMErrorRepresentable.h; path = "dynamic/YandexMobileMetrica.xcframework/tvos-arm64_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMErrorRepresentable.h"; sourceTree = "<group>"; };
+		FC580D5E98AED6277CA223494DE105AC /* YMMAdRevenueInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YMMAdRevenueInfo.h; path = "dynamic/YandexMobileMetrica.xcframework/ios-arm64_i386_x86_64-simulator/YandexMobileMetrica.framework/Headers/YMMAdRevenueInfo.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B5C3DAD480650DCC89DD0AAB9A16053 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EFAC23359F15DDB86116EE7FCA1EC374 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A452D29B6504B50DFF285FB8FB3C6635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BB050E77407DF9CBA7538B336BC311E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE1F4CDC7CD1E02DBE56989DD1B231DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9732503888ED3988850E916053B2B6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3108188C6AD5AB4C7D0D135B6F222F6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				576B0E15B41659C15601F085F55166E0 /* YandexMobileMetricaCrashes.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		317477ABCC610643F9C7095018742662 /* Pods-TrakerTests */ = {
+			isa = PBXGroup;
+			children = (
+				B326ED7DA8841CAFCB95D109CB1963C6 /* Pods-TrakerTests.modulemap */,
+				27A490D59ACBDCAE2C70BA07E5FB1390 /* Pods-TrakerTests-acknowledgements.markdown */,
+				F1377E6963CD715FA2F865CABC07FF52 /* Pods-TrakerTests-acknowledgements.plist */,
+				AEC631D168373F350BB8C931F8656221 /* Pods-TrakerTests-dummy.m */,
+				C0E77142E17B268654A0AE9C39C2CE0B /* Pods-TrakerTests-Info.plist */,
+				8DA41C679D7F236A6FD730FF26144359 /* Pods-TrakerTests-umbrella.h */,
+				5CA0B66BC7232F3A1D8F069657CDD01D /* Pods-TrakerTests.debug.xcconfig */,
+				3B25154BC76D327D8717442B527EDB69 /* Pods-TrakerTests.release.xcconfig */,
+			);
+			name = "Pods-TrakerTests";
+			path = "Target Support Files/Pods-TrakerTests";
+			sourceTree = "<group>";
+		};
+		3350E41B3F285C06E06385A0AB8FB228 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AB91BB28C66579415F323072F096FE9 /* YandexMobileMetrica-xcframeworks.sh */,
+				744984EB0DA478A5911BB4632BDB2BA2 /* YandexMobileMetrica.debug.xcconfig */,
+				2E316CC18147B86AECE64BE318EE7371 /* YandexMobileMetrica.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YandexMobileMetrica";
+			sourceTree = "<group>";
+		};
+		34350FA28CFEE83EC497AB3EFE86987F /* Crashes */ = {
+			isa = PBXGroup;
+			children = (
+				F16E0996BBE9ACB1B453E184D29C7DEE /* YandexMobileMetricaCrashes-umbrella.h */,
+				EE441224E5245D01260A268D455EE558 /* YandexMobileMetricaCrashes-umbrella.h */,
+				13CC8BCC2F039E5D08F6BF374B990CCC /* YandexMobileMetricaCrashes-umbrella.h */,
+				6690336A30813B823E4FA63DE5C25F43 /* YandexMobileMetricaCrashes-umbrella.h */,
+				3108188C6AD5AB4C7D0D135B6F222F6A /* Frameworks */,
+			);
+			name = Crashes;
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		6376CC2AA759D30563CB58A78B4A505C /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				9B651BDE06D9634137AA33B5AAC008DF /* Core */,
+				34350FA28CFEE83EC497AB3EFE86987F /* Crashes */,
+			);
+			name = Dynamic;
+			sourceTree = "<group>";
+		};
+		78882F4AA8ADFBE99DC34B7EB31D5F7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3FB77E9DA3D58DB96871332A3B08BF7F /* Pods-Traker */,
+				D94D3BED7B3C701C763A2434F3B51C01 /* Pods-Traker-TrakerUITests */,
+				76521AF5FB031F3F4A6653DE709D3B61 /* Pods-TrakerTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B7A347B2896B7E932F9008744386097 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC622FD506EA7CB10BE7619258D7EB76 /* SwiftLint.debug.xcconfig */,
+				87944B352B3A4D7C266CD3A4BE03315D /* SwiftLint.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftLint";
+			sourceTree = "<group>";
+		};
+		9B651BDE06D9634137AA33B5AAC008DF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3FA4F1AA6DF8E04D399A12F9D9523477 /* YandexMobileMetrica.h */,
+				2E748B7FF0CD08695076BB345A49EFD3 /* YandexMobileMetrica.h */,
+				16C69A5EE7875F28CD3A3D9022A5A76A /* YandexMobileMetrica.h */,
+				5A3AB0E4DDC9CAA46B49C8958D6A2968 /* YandexMobileMetrica.h */,
+				E0996711A63F30DD129FB50628784108 /* YandexMobileMetrica-umbrella.h */,
+				7A550D3E438A4CF4B9F1742B165A7B8F /* YandexMobileMetrica-umbrella.h */,
+				ACDD29E6CACA3D1A5366221C5F804AD5 /* YandexMobileMetrica-umbrella.h */,
+				EA89EBB947298030ABD09B811C0C1CDB /* YandexMobileMetrica-umbrella.h */,
+				580ADE43271002403475F0D2A1D3673D /* YMMAdRevenueInfo.h */,
+				FC580D5E98AED6277CA223494DE105AC /* YMMAdRevenueInfo.h */,
+				70957960F4979F5A9B8D67F2E91B8479 /* YMMAdRevenueInfo.h */,
+				15301DB363B7FA5605F25308301910BD /* YMMAdRevenueInfo.h */,
+				1BFF417AF358E5657803E83A98822B47 /* YMMCompletionBlocks.h */,
+				06D248ED5907217BE0D86C2583E2BAE5 /* YMMCompletionBlocks.h */,
+				9E856675E731FA0B8527B577C8604418 /* YMMCompletionBlocks.h */,
+				0A5C2654A2D6D7F1EE9A52EB2223CD81 /* YMMCompletionBlocks.h */,
+				A20DB3993107BD2939CEB1AC3A02151E /* YMMECommerce.h */,
+				944A7CBD0A4F17A7005A7797A266736C /* YMMECommerce.h */,
+				50B85D5ACB3CB87796956C7C0971BDC8 /* YMMECommerce.h */,
+				4714C51F85FE8F7759BC624395B88A11 /* YMMECommerce.h */,
+				16BD7D6AAF1C6B7A5BA197F54E390AF1 /* YMMError.h */,
+				6BE8F597B5E8ED922816A37403C01DC9 /* YMMError.h */,
+				D2B52FEDD323CA32865D74B99526C49B /* YMMError.h */,
+				1EAB2B21632775220A0A077154828D6B /* YMMError.h */,
+				E47CB5F979D10303CD791DBF554180EC /* YMMErrorRepresentable.h */,
+				BA4BEF1949A21FB9CE92E5495951E93B /* YMMErrorRepresentable.h */,
+				C51974BDB990BBF654CFCC65F5FDE2AD /* YMMErrorRepresentable.h */,
+				F727C7F2D3B18DAC0DA3E4410471D344 /* YMMErrorRepresentable.h */,
+				1D361008CABAA581161253FD74A5D575 /* YMMPluginErrorDetails.h */,
+				61E8EA6DA11F476542A811D3B767BE3A /* YMMPluginErrorDetails.h */,
+				E8319BDA6573D14BCBCB8F70B93ECC17 /* YMMPluginErrorDetails.h */,
+				24715B793CD0D62FFF8C88FAE6D496DB /* YMMPluginErrorDetails.h */,
+				D16B107641614B3497AE8256827C43AD /* YMMProfileAttribute.h */,
+				49138528EC9F25A7B4F37EADAD167583 /* YMMProfileAttribute.h */,
+				B0DEA18751FEF21B1021E65A3D3E643A /* YMMProfileAttribute.h */,
+				6E9C729A55D5469A5D934EE68A7759F1 /* YMMProfileAttribute.h */,
+				7E317DAA8F62FA0C26B56A20583F997A /* YMMReporterConfiguration.h */,
+				081985CCDBFA434F556BCC2C3A3E7A72 /* YMMReporterConfiguration.h */,
+				5D1D8071C8EE31EFF1074400519BE416 /* YMMReporterConfiguration.h */,
+				E476260DE00DDC30ACDA0F84D79DBE15 /* YMMReporterConfiguration.h */,
+				6BC98A736ADF9CBF3B3B93F2DD0CA41F /* YMMRevenueInfo.h */,
+				5048B40EA176B6D1DAD454636E4D5E70 /* YMMRevenueInfo.h */,
+				AA28EE62C6D0033618B26C0AD3905DB8 /* YMMRevenueInfo.h */,
+				80CB32E023EE23807B4C8E9A3E7F02E3 /* YMMRevenueInfo.h */,
+				2B5EF11DBDECB7B85EDEA3F0E682CD2E /* YMMStackTraceElement.h */,
+				A0CED859C1C51ECCC2252DCB27BDC0A3 /* YMMStackTraceElement.h */,
+				03B9E6BF457997AAB4D87A265DDF9A32 /* YMMStackTraceElement.h */,
+				18EAAF77DF187B871E59056FEECE8E56 /* YMMStackTraceElement.h */,
+				D90FE1637EF5CE941EB0BFAFC046B94C /* YMMUserProfile.h */,
+				4F9C6507C030FA202DFEFF3014A41A77 /* YMMUserProfile.h */,
+				762ECD01800EA8D24ED257A66BC8812F /* YMMUserProfile.h */,
+				CA880A951BD369A4A250CA0E64653E79 /* YMMUserProfile.h */,
+				3EF860696A8B8874443B0A4A27EA99BC /* YMMVersion.h */,
+				8979DD0EC2D95485F0B7C08746B70CF4 /* YMMVersion.h */,
+				A62052D3A9CECA511B25D9067923DD51 /* YMMVersion.h */,
+				1A2C91DAF7727CFC2DBCEE2952F6128A /* YMMVersion.h */,
+				B9CCAE6557A6CCC8866A86D39404AA8C /* YMMYandexMetrica.h */,
+				13879E419487FE2DEDFACF4C3E877E5B /* YMMYandexMetrica.h */,
+				0123BF805D5C952D852419291DF9DB86 /* YMMYandexMetrica.h */,
+				6B48956C24D5FA447C91CEB760441397 /* YMMYandexMetrica.h */,
+				0604116D1C34803EA774F89620C7A0D5 /* YMMYandexMetricaConfiguration.h */,
+				708DAFD0DB3AD40440E9D65A657ED0EC /* YMMYandexMetricaConfiguration.h */,
+				50D133BC956BF47DA6BD32C9F4EF0A22 /* YMMYandexMetricaConfiguration.h */,
+				3D0A5B12C28FFF2134033C12CB9E36CD /* YMMYandexMetricaConfiguration.h */,
+				59E9334E0D9D105F058A9D017316F984 /* YMMYandexMetricaPluginReporting.h */,
+				662554D2BF280F4B03174E92E7908B7C /* YMMYandexMetricaPluginReporting.h */,
+				D55E3F612F9848F51E0F5386D3AD254A /* YMMYandexMetricaPluginReporting.h */,
+				7D83EBD4598D1ADC93EF79FCE8D624EC /* YMMYandexMetricaPluginReporting.h */,
+				1052BAB398C1DC01297BF9BA808C377B /* YMMYandexMetricaPlugins.h */,
+				5F82153E5A25EB578D24FBE928CF8893 /* YMMYandexMetricaPlugins.h */,
+				C6B837C32BA58E359C14EF157D3CF835 /* YMMYandexMetricaPlugins.h */,
+				C3844A2E6D4F8563DB7A2350156A238F /* YMMYandexMetricaPlugins.h */,
+				2DF02436B32B2AB9D1A4EB4FD91E836A /* YMMYandexMetricaPreloadInfo.h */,
+				0319F242A29F1B417C0901BCD9E326E9 /* YMMYandexMetricaPreloadInfo.h */,
+				E8715461D5A8E490F6C979F2723FFC37 /* YMMYandexMetricaPreloadInfo.h */,
+				1157A5671FFEAD7AC62077E8BF8BFB19 /* YMMYandexMetricaPreloadInfo.h */,
+				A13F64762285995AEC7CA9F18F4E3704 /* YMMYandexMetricaReporting.h */,
+				E8A0F3A890A389C63EC2AC01900A8F17 /* YMMYandexMetricaReporting.h */,
+				03E233F2BBB2A48BB063909643FAB804 /* YMMYandexMetricaReporting.h */,
+				5AC39D03B3711B7DCABF960950EE18C9 /* YMMYandexMetricaReporting.h */,
+				B680BEF986D1CDAA7B67FE365F56B75F /* Frameworks */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		9F8128E10177105B40CF69357440349D /* Pods-Traker-TrakerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				02899014CEBDA8F167B55AA8ABB6E345 /* Pods-Traker-TrakerUITests.modulemap */,
+				3B79D076A770967CEA8F9721687F67F4 /* Pods-Traker-TrakerUITests-acknowledgements.markdown */,
+				89301B144634BCCACA580483F5875064 /* Pods-Traker-TrakerUITests-acknowledgements.plist */,
+				BBE3D7DDF734CECE4DED0D40DC7F281D /* Pods-Traker-TrakerUITests-dummy.m */,
+				01EACAEAAEDA5669E6941E454B13F46E /* Pods-Traker-TrakerUITests-frameworks.sh */,
+				3E11194D141F8C09133770F9CCC821A1 /* Pods-Traker-TrakerUITests-Info.plist */,
+				3E7E23D9F091FFFC73B800027312E730 /* Pods-Traker-TrakerUITests-umbrella.h */,
+				A0A1AF67857BDE90DD67B3C91E61FC54 /* Pods-Traker-TrakerUITests.debug.xcconfig */,
+				EED83A8505B692BD5110D07DAA384BAF /* Pods-Traker-TrakerUITests.release.xcconfig */,
+			);
+			name = "Pods-Traker-TrakerUITests";
+			path = "Target Support Files/Pods-Traker-TrakerUITests";
+			sourceTree = "<group>";
+		};
+		B680BEF986D1CDAA7B67FE365F56B75F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4694BDF60F37EF1626B9B1B0C69D91CF /* YandexMobileMetrica.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BE9F6853C6518335AB96B271C64EB3E0 /* SwiftLint */ = {
+			isa = PBXGroup;
+			children = (
+				8B7A347B2896B7E932F9008744386097 /* Support Files */,
+			);
+			path = SwiftLint;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				F390EB158ED3632E4CE20BEC63DF9B0F /* Pods */,
+				78882F4AA8ADFBE99DC34B7EB31D5F7E /* Products */,
+				F6A3092F91CA133B9E9152B5FA5EE6E9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E87B86AE872B3B24F6F26CB0307BBD3A /* YandexMobileMetrica */ = {
+			isa = PBXGroup;
+			children = (
+				6376CC2AA759D30563CB58A78B4A505C /* Dynamic */,
+				3350E41B3F285C06E06385A0AB8FB228 /* Support Files */,
+			);
+			path = YandexMobileMetrica;
+			sourceTree = "<group>";
+		};
+		F36DF0E333ED8197986826CC21A21E0F /* Pods-Traker */ = {
+			isa = PBXGroup;
+			children = (
+				1F4FC300027212B4FDAA250F5D6644CF /* Pods-Traker.modulemap */,
+				0718DA735A33F81FF71FEB39FA2A50C6 /* Pods-Traker-acknowledgements.markdown */,
+				A8D072CBDB8CABB6657626E6C776D2E2 /* Pods-Traker-acknowledgements.plist */,
+				D41FDE6DCC233EFEA9D5DA70060AF95A /* Pods-Traker-dummy.m */,
+				67B5206CEE2381A22904C15733FD69E9 /* Pods-Traker-frameworks.sh */,
+				B67FA02E8E4676C94F801E4A6D053F94 /* Pods-Traker-Info.plist */,
+				6ACDA19AE960FADD9ABC2924CC0AAD22 /* Pods-Traker-umbrella.h */,
+				8BAD183685FD8DD7A04B4D03C81B698A /* Pods-Traker.debug.xcconfig */,
+				322A4DA4CC1B7719F4747D990E1379DC /* Pods-Traker.release.xcconfig */,
+			);
+			name = "Pods-Traker";
+			path = "Target Support Files/Pods-Traker";
+			sourceTree = "<group>";
+		};
+		F390EB158ED3632E4CE20BEC63DF9B0F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE9F6853C6518335AB96B271C64EB3E0 /* SwiftLint */,
+				E87B86AE872B3B24F6F26CB0307BBD3A /* YandexMobileMetrica */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F6A3092F91CA133B9E9152B5FA5EE6E9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F36DF0E333ED8197986826CC21A21E0F /* Pods-Traker */,
+				9F8128E10177105B40CF69357440349D /* Pods-Traker-TrakerUITests */,
+				317477ABCC610643F9C7095018742662 /* Pods-TrakerTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0FCB2D69C574912085A5D7B93EC26B57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD87D3ABF599F57DDB577B98ADB886D5 /* Pods-TrakerTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2F9CE5595B744DCEB35845F5210017F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C3CBEF7E8CF2C72F7020D6D11D53C0F /* Pods-Traker-TrakerUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6D56F47EC4828F420E1319C3DE782D8 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02501F8DFC93FDF59CFA3E9C8FD4D0A6 /* Pods-Traker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2D1200B4523DC5BCE8CC3149464E78C8 /* Pods-Traker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4231E583129F07DEA5ABBB1815DFA4A /* Build configuration list for PBXNativeTarget "Pods-Traker" */;
+			buildPhases = (
+				D6D56F47EC4828F420E1319C3DE782D8 /* Headers */,
+				403E10C10AA03FC4ECB56E3EA8E3F7F5 /* Sources */,
+				8B5C3DAD480650DCC89DD0AAB9A16053 /* Frameworks */,
+				B2DCE9633F1ED622AC14284A9982DB02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B75781E0290222BF9649AB83EB7F0F71 /* PBXTargetDependency */,
+				E6CE357404A4264D6B6364603F5BA784 /* PBXTargetDependency */,
+			);
+			name = "Pods-Traker";
+			productName = Pods_Traker;
+			productReference = 3FB77E9DA3D58DB96871332A3B08BF7F /* Pods-Traker */;
+			productType = "com.apple.product-type.framework";
+		};
+		A26CB997C54E328B7564ED4210077025 /* Pods-TrakerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E97C68175D77F2F711778D2526883BC8 /* Build configuration list for PBXNativeTarget "Pods-TrakerTests" */;
+			buildPhases = (
+				0FCB2D69C574912085A5D7B93EC26B57 /* Headers */,
+				F42DD512DD6C706B11728C5C246B3679 /* Sources */,
+				BE1F4CDC7CD1E02DBE56989DD1B231DD /* Frameworks */,
+				051ACEEFAB410BBF3E8D5DC9034C124B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45C5EDAF21210A93E9464208B8FB1608 /* PBXTargetDependency */,
+			);
+			name = "Pods-TrakerTests";
+			productName = Pods_TrakerTests;
+			productReference = 76521AF5FB031F3F4A6653DE709D3B61 /* Pods-TrakerTests */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3DAA8330F0E75917DC0921A46E0C3C3 /* Pods-Traker-TrakerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FFC8D88D5A2D4AC1AF1421DD0304036 /* Build configuration list for PBXNativeTarget "Pods-Traker-TrakerUITests" */;
+			buildPhases = (
+				B2F9CE5595B744DCEB35845F5210017F /* Headers */,
+				A1C0F7D51FB7A616E0EE23D7C9F09029 /* Sources */,
+				A452D29B6504B50DFF285FB8FB3C6635 /* Frameworks */,
+				2B736C99D9C92E4E46C91B476F261812 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B5762ACAD92C37B30758DDD375FF6263 /* PBXTargetDependency */,
+				A2462A8FA6AE6668C1358B649D485C22 /* PBXTargetDependency */,
+			);
+			name = "Pods-Traker-TrakerUITests";
+			productName = Pods_Traker_TrakerUITests;
+			productReference = D94D3BED7B3C701C763A2434F3B51C01 /* Pods-Traker-TrakerUITests */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 78882F4AA8ADFBE99DC34B7EB31D5F7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2D1200B4523DC5BCE8CC3149464E78C8 /* Pods-Traker */,
+				D3DAA8330F0E75917DC0921A46E0C3C3 /* Pods-Traker-TrakerUITests */,
+				A26CB997C54E328B7564ED4210077025 /* Pods-TrakerTests */,
+				52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */,
+				899318C1CEDE586664EC232A68069570 /* YandexMobileMetrica */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		051ACEEFAB410BBF3E8D5DC9034C124B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B736C99D9C92E4E46C91B476F261812 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2DCE9633F1ED622AC14284A9982DB02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6D2995F93765283CDFA66CFB2B2808F6 /* [CP] Copy XCFrameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/YandexMobileMetrica/YandexMobileMetrica-xcframeworks-input-files.xcfilelist",
+			);
+			name = "[CP] Copy XCFrameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/YandexMobileMetrica/YandexMobileMetrica-xcframeworks-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/YandexMobileMetrica/YandexMobileMetrica-xcframeworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		403E10C10AA03FC4ECB56E3EA8E3F7F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BA779B1833FFB6E8AD0323135A5E942 /* Pods-Traker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1C0F7D51FB7A616E0EE23D7C9F09029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4F5B54863F5F67869A05CB65B0D6FC /* Pods-Traker-TrakerUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F42DD512DD6C706B11728C5C246B3679 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B5497CD3CAEE2E9EA37F2383199B4262 /* Pods-TrakerTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		45C5EDAF21210A93E9464208B8FB1608 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-Traker";
+			target = 2D1200B4523DC5BCE8CC3149464E78C8 /* Pods-Traker */;
+			targetProxy = 715353B4346044A7F2BEDE608EC0227F /* PBXContainerItemProxy */;
+		};
+		A2462A8FA6AE6668C1358B649D485C22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YandexMobileMetrica;
+			target = 899318C1CEDE586664EC232A68069570 /* YandexMobileMetrica */;
+			targetProxy = BB17ADC491E60C68D7D457D635746C09 /* PBXContainerItemProxy */;
+		};
+		B5762ACAD92C37B30758DDD375FF6263 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 3590277433CD5F15AE1823537AC20124 /* PBXContainerItemProxy */;
+		};
+		B75781E0290222BF9649AB83EB7F0F71 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftLint;
+			target = 52B60EC2A583F24ACBB69C113F5488B9 /* SwiftLint */;
+			targetProxy = 203BCBCFCFDC0E42B676BAFC9AB57C9E /* PBXContainerItemProxy */;
+		};
+		E6CE357404A4264D6B6364603F5BA784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YandexMobileMetrica;
+			target = 899318C1CEDE586664EC232A68069570 /* YandexMobileMetrica */;
+			targetProxy = 801B68F63F9221C818BF68E65045E3C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26EA5A9600226D2B7D8D25152A304F3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87944B352B3A4D7C266CD3A4BE03315D /* SwiftLint.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3F93687DA4BFC345DAD2BF7A11257352 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 322A4DA4CC1B7719F4747D990E1379DC /* Pods-Traker.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Traker/Pods-Traker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Traker/Pods-Traker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		74380611613E30A9E4EFF1F1516239A1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CA0B66BC7232F3A1D8F069657CDD01D /* Pods-TrakerTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TrakerTests/Pods-TrakerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrakerTests/Pods-TrakerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8208C6D11AA1A5C6B485C9743987B7D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EED83A8505B692BD5110D07DAA384BAF /* Pods-Traker-TrakerUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Traker-TrakerUITests/Pods-Traker-TrakerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Traker-TrakerUITests/Pods-Traker-TrakerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8E06F8DA24D76A8BFD286D036C18D668 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B25154BC76D327D8717442B527EDB69 /* Pods-TrakerTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-TrakerTests/Pods-TrakerTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TrakerTests/Pods-TrakerTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		963BD7925C123C698115AE45CD264E7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A6C70C57478AFC8CB2F53FCCF9B3DE7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0A1AF67857BDE90DD67B3C91E61FC54 /* Pods-Traker-TrakerUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Traker-TrakerUITests/Pods-Traker-TrakerUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Traker-TrakerUITests/Pods-Traker-TrakerUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AF36B849350DB1B031C49485D6E3DA46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BAD183685FD8DD7A04B4D03C81B698A /* Pods-Traker.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Traker/Pods-Traker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Traker/Pods-Traker.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B4F2B041EDB30E21FDBD59988A62DA90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 744984EB0DA478A5911BB4632BDB2BA2 /* YandexMobileMetrica.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE41DAF1404243B04D8AC5BE3E507828 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E316CC18147B86AECE64BE318EE7371 /* YandexMobileMetrica.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8256E1B894D64F9B6D6E0F27C2CABC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E9E1A48A750B946DE9877594C6E735E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC622FD506EA7CB10BE7619258D7EB76 /* SwiftLint.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FFC8D88D5A2D4AC1AF1421DD0304036 /* Build configuration list for PBXNativeTarget "Pods-Traker-TrakerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6C70C57478AFC8CB2F53FCCF9B3DE7E /* Debug */,
+				8208C6D11AA1A5C6B485C9743987B7D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8256E1B894D64F9B6D6E0F27C2CABC5 /* Debug */,
+				963BD7925C123C698115AE45CD264E7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83787D0EC5DA7713B7C6D32C1D11D707 /* Build configuration list for PBXAggregateTarget "YandexMobileMetrica" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4F2B041EDB30E21FDBD59988A62DA90 /* Debug */,
+				CE41DAF1404243B04D8AC5BE3E507828 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE7B4FB01588B9E6DF09CB79FC7CE7BD /* Build configuration list for PBXAggregateTarget "SwiftLint" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9E1A48A750B946DE9877594C6E735E4 /* Debug */,
+				26EA5A9600226D2B7D8D25152A304F3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4231E583129F07DEA5ABBB1815DFA4A /* Build configuration list for PBXNativeTarget "Pods-Traker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF36B849350DB1B031C49485D6E3DA46 /* Debug */,
+				3F93687DA4BFC345DAD2BF7A11257352 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E97C68175D77F2F711778D2526883BC8 /* Build configuration list for PBXNativeTarget "Pods-TrakerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				74380611613E30A9E4EFF1F1516239A1 /* Debug */,
+				8E06F8DA24D76A8BFD286D036C18D668 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
