@@ -328,7 +328,6 @@
 		EF882E8E2B108E6400E957FD = {
 			isa = PBXGroup;
 			children = (
-				EF0FCE902C601E330057F989 /* Filters */,
 				EF0FCE872C6010240057F989 /* AlertPresenter */,
 				EF0FCE7F2C600DB10057F989 /* Service */,
 				EF0FCE5A2C6007C80057F989 /* Resources */,
@@ -354,6 +353,7 @@
 		EF882E992B108E6400E957FD /* Traker */ = {
 			isa = PBXGroup;
 			children = (
+				EF0FCE902C601E330057F989 /* Filters */,
 				EF0FCE842C600FD40057F989 /* Statistics */,
 				EF8A76642C5A1674008FC17D /* Onboarding */,
 				EF8A75F42C50D4B2008FC17D /* Setings */,
