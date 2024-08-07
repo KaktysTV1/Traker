@@ -1,68 +1,86 @@
 import Foundation
 
-enum Weekday: String, CaseIterable, Codable {
-    case Monday = "Понедельник"
-    case Tuesday = "Вторник"
-    case Wednesday = "Среда"
-    case Thursday = "Четверг"
-    case Friday = "Пятница"
-    case Saturday = "Суббота"
-    case Sunday = "Воскресенье"
-    
+enum Weekday: CaseIterable, Codable {
+    case monday
+    case tuesday
+    case wednesday
+    case thursday
+    case friday
+    case saturday
+    case sunday
+
     var calendarNumber: Int {
         switch self {
-        case .Monday:
+        case .monday:
             return 2
-        case .Tuesday:
+        case .tuesday:
             return 3
-        case .Wednesday:
+        case .wednesday:
             return 4
-        case .Thursday:
+        case .thursday:
             return 5
-        case . Friday:
+        case .friday:
             return 6
-        case .Saturday:
+        case .saturday:
             return 7
-        case .Sunday:
+        case .sunday:
             return 1
         }
     }
-    
+
     var dayNumber: Int {
         switch self {
-        case .Monday:
+        case .monday:
             return 1
-        case .Tuesday:
+        case .tuesday:
             return 2
-        case .Wednesday:
+        case .wednesday:
             return 3
-        case .Thursday:
+        case .thursday:
             return 4
-        case . Friday:
+        case .friday:
             return 5
-        case .Saturday:
+        case .saturday:
             return 6
-        case .Sunday:
+        case .sunday:
             return 7
         }
     }
-    
+
+    var localizedName: String {
+        switch self {
+        case .monday:
+            return L10n.Localizable.Day.monday
+        case .tuesday:
+            return L10n.Localizable.Day.tuesday
+        case .wednesday:
+            return L10n.Localizable.Day.wednesday
+        case .thursday:
+            return L10n.Localizable.Day.thursday
+        case .friday:
+            return L10n.Localizable.Day.friday
+        case .saturday:
+            return L10n.Localizable.Day.saturday
+        case .sunday:
+            return L10n.Localizable.Day.sunday
+        }
+    }
     var shortName: String {
         switch self {
-        case .Monday:
-            return "Пн"
-        case .Tuesday:
-            return "Вт"
-        case .Wednesday:
-            return "Ср"
-        case .Thursday:
-            return "Чт"
-        case . Friday:
-            return "Пт"
-        case .Saturday:
-            return "Сб"
-        case .Sunday:
-            return "Вс"
+        case .monday:
+            return L10n.Localizable.Day.Short.monday
+        case .tuesday:
+            return L10n.Localizable.Day.Short.tuesday
+        case .wednesday:
+            return L10n.Localizable.Day.Short.wednesday
+        case .thursday:
+            return L10n.Localizable.Day.Short.thursday
+        case .friday:
+            return L10n.Localizable.Day.Short.friday
+        case .saturday:
+            return L10n.Localizable.Day.Short.saturday
+        case .sunday:
+            return L10n.Localizable.Day.Short.sunday
         }
     }
 }

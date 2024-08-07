@@ -1,0 +1,71 @@
+/* 
+  Localizable.strings
+  Traker
+
+  Created by Андрей Чупрыненко on 04.08.2024.
+  
+*/
+"title.firstPage" = "Track only what \nyou want";
+"title.secondPage" = "Even if it's not liters \nof water and yoga";
+"title.emptyTrackersStub" = "What will we track?";
+"title.search" = "Search";
+"title.trackers" = "Trackers";
+"title.statistics" = "Statistics";
+"title.noDataToAnalyze" = "Nothing to analyze yet";
+"title.newHabit" = "New habit";
+"title.newEvent" = "New irregular event";
+"title.trackerCreating" = "Creating a tracker";
+"title.category" = "Category";
+"title.schedule" = "Schedule";
+"title.emoji" = "Emoji";
+"title.color" = "Color";
+"title.bestPeriod" = "Best period";
+"title.idealDays" = "Ideal days";
+"title.completedTrackers" = "Trackers completed";
+"title.averageValue" = "Average value";
+"title.addCategory" = "Add category";
+"title.emptyCategories" = "Habits and events can \nbe combined by meaning";
+"title.newCategory" = "New category";
+"title.editingCategory" = "Editing a category";
+"title.habitEditing" = "Habit editing";
+"title.enterCategory" = "Enter category name";
+"title.habit" = "Habit";
+"title.event" = "Irregular event";
+"title.alertTitle" = "Are you sure this category is not needed?";
+"title.alertMessage" = "Trackers belonging to this category will also be deleted";
+"title.deleteTrackerTitle" = "Are you sure you want to delete the tracker?";
+"title.pinnedTitle" = "Pinned";
+"title.notFoundTitle" = "Nothing found";
+"filter.filtersTitle" = "Filters";
+"filter.allTrackersTitle" = "All trackers";
+"filter.todayTrackersTitle" = "Trackers for today";
+"filter.completedTrackersTitle" = "Completed";
+"filter.notCompletedTitle" = "Not completed";
+"button.saveTitle" = "Save";
+"button.editTitle" = "Edit";
+"button.pinTitle" = "Pin";
+"button.unpinTitle" = "Unpin";
+"button.delete" = "Delete";
+"button.wowTechnology" = "Now, that's technology!";
+"button.done" = "Done";
+"button.cancel" = "Cancel";
+"button.create" = "Create";
+"field.lettersLimit" = "38 character limit";
+"field.enterTrackerName" = "Enter tracker's name";
+"day.monday" = "Monday";
+"day.tuesday" = "Tuesday";
+"day.wednesday" = "Wednesday";
+"day.thursday" = "Thursday";
+"day.friday" = "Friday";
+"day.saturday" = "Saturday";
+"day.sunday" = "Sunday";
+"day.weekDays" = "WeekDays";
+"day.weekEnd" = "WeekEnd";
+"day.allDays" = "All days";
+"day.short.monday" = "Mon";
+"day.short.tuesday" = "Tue";
+"day.short.wednesday" = "Wed";
+"day.short.thursday" = "Thu";
+"day.short.friday" = "Fri";
+"day.short.saturday" = "Sat";
+"day.short.sunday" = "Sun";

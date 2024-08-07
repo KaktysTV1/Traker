@@ -1,6 +1,6 @@
 import UIKit
 
-class OnboardingViewController: UIPageViewController {
+final class OnboardingViewController: UIPageViewController {
     // MARK: - Private Properties:
     private lazy var pages: [UIViewController] = {
         let firstPage = FirstPageViewController()
@@ -11,9 +11,9 @@ class OnboardingViewController: UIPageViewController {
     
     private lazy var wowButton: UIButton = {
         let button  = UIButton(type: .system)
-        button.setTitle("Вот это технологии!", for: .normal)
-        button.backgroundColor = .YPBlack
-        button.tintColor = .YPWhite
+        button.setTitle(L10n.Localizable.Button.wowTechnology, for: .normal)
+        button.backgroundColor = .YPOnlyBlack
+        button.tintColor = .YPOnlyWhite
         button.layer.masksToBounds = true
         button.layer.cornerRadius = 16
         button.translatesAutoresizingMaskIntoConstraints = false
@@ -50,7 +50,7 @@ class OnboardingViewController: UIPageViewController {
     }
     
     // MARK: - Methods:
-    override init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [UIPageViewController.OptionsKey : Any]? = nil) {
+    override init(transitionStyle style: UIPageViewController.TransitionStyle, navigationOrientation: UIPageViewController.NavigationOrientation, options: [UIPageViewController.OptionsKey: Any]? = nil) {
         super.init(transitionStyle: .scroll, navigationOrientation: .horizontal)
     }
     
@@ -83,7 +83,7 @@ class OnboardingViewController: UIPageViewController {
 // MARK: - UIPageViewControllerDataSource:
 extension OnboardingViewController: UIPageViewControllerDataSource {
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-        guard let viewControllerIndex = pages.firstIndex(of: viewController) else  {
+        guard let viewControllerIndex = pages.firstIndex(of: viewController) else {
             return nil
         }
         
