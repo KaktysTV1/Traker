@@ -7,7 +7,7 @@ final class SplashViewController: UIViewController {
     private var wasLaunchedBefore: Bool = FirstLaunchStorage().wasLaunchedBefore
     
     private lazy var imageView: UIImageView = {
-       let logo = UIImage(named: "praktikumLogo")
+        let logo = UIImage(named: "praktikumLogo")
         let image = UIImageView(image: logo)
         image.translatesAutoresizingMaskIntoConstraints = false
         self.view.addSubview(image)
@@ -18,7 +18,7 @@ final class SplashViewController: UIViewController {
     // MARK: - LifeCycle:
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         self.view.backgroundColor = .YPBlue
         setupConstraints()
         checkIfFirstLaunch()
@@ -38,7 +38,7 @@ final class SplashViewController: UIViewController {
         guard let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate else {
             fatalError("Не удалось инициализировать SceneDelegate")
         }
-
+        
         if firstLaunchStorage.wasLaunchedBefore == false {
             sceneDelegate.window?.rootViewController = OnboardingViewController()
             firstLaunchStorage.wasLaunchedBefore = true

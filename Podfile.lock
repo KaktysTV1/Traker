@@ -1,0 +1,25 @@
+PODS:
+  - SwiftLint (0.55.1)
+  - YandexMobileMetrica/Dynamic (4.5.2):
+    - YandexMobileMetrica/Dynamic/Core (= 4.5.2)
+    - YandexMobileMetrica/Dynamic/Crashes (= 4.5.2)
+  - YandexMobileMetrica/Dynamic/Core (4.5.2)
+  - YandexMobileMetrica/Dynamic/Crashes (4.5.2):
+    - YandexMobileMetrica/Dynamic/Core
+
+DEPENDENCIES:
+  - SwiftLint
+  - YandexMobileMetrica/Dynamic (= 4.5.2)
+
+SPEC REPOS:
+  trunk:
+    - SwiftLint
+    - YandexMobileMetrica
+
+SPEC CHECKSUMS:
+  SwiftLint: 3fe909719babe5537c552ee8181c0031392be933
+  YandexMobileMetrica: f5368ee93f286c793d73b58da00929babfc897c1
+
+PODFILE CHECKSUM: 3106cf5e6889a7722b1d94488e3a88056f7a1470
+
+COCOAPODS: 1.15.2

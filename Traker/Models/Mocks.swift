@@ -8,38 +8,43 @@ final class Mocks {
                 Tracker(
                     id: UUID(),
                     name: "Swift",
-                    schedule: [.Monday, .Tuesday, .Wednesday, .Friday, .Saturday, .Sunday],
+                    schedule: [.monday, .tuesday, .wednesday, .friday, .saturday, .sunday],
                     color: .YPColorSelection10,
-                    emoji: "👍🏻"),
+                    emoji: "👍🏻",
+                    isPinned: true),
                 Tracker(
                     id: UUID(),
                     name: "SwiftBook",
-                    schedule: [.Monday, .Tuesday, .Sunday],
+                    schedule: [.monday, .tuesday, .sunday],
                     color: .YPColorSelection2,
-                    emoji: "🤘🏿"),
+                    emoji: "🤘🏿",
+                    isPinned: true),
                 Tracker(
                     id: UUID(),
                     name: "Сomputer Science",
-                    schedule: [.Monday, .Tuesday,  .Saturday, .Sunday],
+                    schedule: [.monday, .tuesday, .saturday, .sunday],
                     color: .YPColorSelection3,
-                    emoji: "👋")
+                    emoji: "👋",
+                    isPinned: false)
             ]),
-        
+
         TrackerCategory(
             name: "Sport",
             includedTrackers: [
                 Tracker(
                     id: UUID(),
                     name: "Gym",
-                    schedule: [.Monday, .Tuesday, .Wednesday, .Friday, .Sunday,],
+                    schedule: [.monday, .tuesday, .wednesday, .friday, .sunday ],
                     color: .YPColorSelection6,
-                    emoji: "💪🏻"),
+                    emoji: "💪🏻",
+                    isPinned: true),
                 Tracker(
                     id: UUID(),
                     name: "Football",
-                    schedule: [.Wednesday],
+                    schedule: [.wednesday],
                     color: .YPColorSelection13,
-                    emoji: "⚽️")
+                    emoji: "⚽️",
+                    isPinned: false)
             ])
     ]
 }
